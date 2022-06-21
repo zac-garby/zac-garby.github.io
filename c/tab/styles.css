@@ -13,38 +13,30 @@ div.wrapper {
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 100px;
 }
 
-input {
-    display: block;
+textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 14pt;
-}
-
-input[type=submit] {
-    width: 80%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 10px;
-    border: none;
-    background-color: rgb(185, 176, 169);
-    border-bottom: 1px solid rgb(167, 163, 157);
-    border-radius: 1px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-code.output pre {
+    height: 80px;
+    resize: none;
     font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-    font-size: 10pt;
 }
 
-code.output pre.error {
-    color: rgb(201, 48, 37);
-    font-weight: bold;
-    font-size: 20pt;
+input[type=submit], a.example {
+    font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    width: 100%;
+    background-color: rgb(226, 218, 202);
+    border: none;
+    border-bottom: 1px solid rgb(136, 129, 117);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14pt;
+    text-decoration: underline;
+}
+
+a.example {
+    display: block;
+    background-color: rgb(202, 189, 221);
+    text-align: center;
+    margin-top: 5px;
 }
