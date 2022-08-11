@@ -32,7 +32,47 @@
         </p>
         <hr>
         <article>
-            <em>Currently, I don't have anything here, but I'll be adding some of my projects over the next few days hopefully.</em>
+            <h1>Cancrizans</h1>
+            <p>
+                At the moment, I'm working on an <a href="https://en.wikipedia.org/wiki/Frequency_modulation_synthesis">FM synthesiser</a>, called <a href="https://github.com/zac-garby/fm">cancrizans</a> (because cancrizans &rarr; <a href="https://en.wikipedia.org/wiki/The_Musical_Offering#Structure_and_instrumentation">Bach's crab canon</a> &rarr; crab &rarr; it's written in Rust.) It's based somewhat on <a href="https://www.beepbox.co/">beepbox</a> but with the aim of improving a few things I'm not so keen on.
+            </p>
+            <p>
+                This is also my first real project using <a href="https://www.rust-lang.org">Rust</a> and I'm really liking it! The ownership/borrowing concept was a bit confusing and annoying at first, but I've had a couple of months to get used to it and now I wish more languages had a similar idea. Though I will say, it's kind of annoying having to use <code>Arc&lt;Mutex&lt;x&gt;&gt;</code> to implement shared state&mdash;something which happened to come up quite a bit.
+            </p>
+            <p>Anyway, here's a screenshot of cancrizans in its current state.</p>
+            <img src="/images/cancrizans.png" alt="A screenshot of a song written in cancrizans.">
+            <p>
+                I'm sort of going for the <a href="https://www.aseprite.org">aseprite</a> aesthetic, where the UI itself is pixely. I think this looks really nice, and&mdash;as I'm planning on using this mostly for game music&mdash;gets you in the mood a bit more. However, it did of course mean I had to write my own UI library from the ground up. Feel free to look at <a href="https://github.com/zac-garby/fm/blob/main/src/window/elements.rs">the code</a> for this part, but I will warn you that it is <em>absolutely</em> disgusting and horrible and I need to rewrite it asap.
+            </p>
+            <p>
+                There's a lot left to do in the synth itself, too, but at the moment I have a reasonable set of features and it can actually be used to compose music. I've made an organ sound for it, using eight oscillators, feeding back into one another, and it sounds pretty good. I also have a reverb effect, although this can't be controlled yet through the UI.
+            </p>
+            <h2>Why?</h2>
+            <p>
+                Why am I making this? Well, it's fun. I didn't know much about audio synthesis, and it turns out that whole field is really interesting. Also, it seems like as good a way as any to learn Rust.
+            </p>
+            <p>
+                Also, as mentioned, it aims to improve on a few areas that, in my opinion, beepbox (which is what I tend to use to write music) doesn't do so well. Mostly, I don't like how you enter notes and arrange songs. In beepbox, two notes cannot overlap unless they begin and end at the same point in time (or if they are played by different instruments), which basically throws any chance of doing counterpoint out the window. Also, songs are arranged in chunks of a few bars, which have to fit to a grid. This forces you to write pieces of music in a very rigid structure, which sounds okay sometimes, but I'm not a huge fan of. Cancrizans tries to give a more free-form song editor.
+            </p>
+            <p>
+                Also, I prefer desktop apps for most things. I really don't want to have to find a website every time I want to make some music.
+            </p>
+            <h2>Problems I had</h2>
+            <p>
+                If I've learned anything, it's that audio effects are way more complicated than I'd expected. Though I will say, it's very <em>very</em> cool that you can implement any <a href="https://en.wikipedia.org/wiki/Digital_biquad_filter">biquad filter</a> (e.g. <a href="https://en.wikipedia.org/wiki/Low-pass_filter">lowpass</a>) by looking just at the previous three samples (and also the previous three outputs from the filter.) Like if you actually think about that: you can cut off or increase a very specific set of frequencies (including things like peaks, troughs, steps, etc) just by multiplying the last three samples by a <a href="https://www.earlevel.com/main/2021/09/02/biquad-calculator-v3/">very specifically calculated</a> set of coefficients! If you're interested, this <a href="https://webaudio.github.io/Audio-EQ-Cookbook/audio-eq-cookbook.html">website</a> is quite nice as it has all the formulae for different types of biquad filters. Also, <a href="https://github.com/johnnesky/beepbox/blob/afc81d1c641dd0bb4409007a34be2f85b28bf401/synth/filtering.ts#L29">beepbox's source code</a> is extremely nicely commented which helped me a lot, plus <a href="https://www.dsprelated.com/freebooks/filters/">this book.</a> Just make sure your biquad coefficients aren't off by even 0.001, because your computer will quite literally scream at you.
+            </p>
+            <p>
+                In fact, the debugging process of this project basically consisted of me turning my volume down to as low as it can possibly go without being silent, just in case (as was often the case) I accidentally sent billions of samples of the maximum possible amplitude at my speakers. I'm just lucky I wasn't wearing headphones when I first made that mistake.
+            </p>
+            <p>
+                The next thing I need to do is definitely to rewrite my UI library. It's awful. I mean <em>really</em> awful. For example, see that control panel in the middle which controls an oscillator's settings? That's more than 300 lines of code I think (I don't even want to look at the code to check), all because my UI doesn't do any auto-layout. I have to manually calculate rectangles for each element, and place them in order. It's just so bad. In my defence, I didn't expect the project to get this complicated, but still...
+            </p>
+            <p>
+                Oh yeah, also: event handling is annoying. A button needs to know the position of the mouse when it has left it, so it knows that it's no longer being hovered over. However, the mouse motion event shoudln't be diverted from other elements, because they also need to know. This means that, at least the way I've done things, some events are sent to all elements, and some events are sent only to elements which contain the cursor. This is, of course, horrendous.
+            </p>
+            <p>
+                Anyway, if you'd like to give cancrizans a try, clone <a href="https://github.com/zac-garby/fm">the repository</a>, install Rust, and then <code>cargo run --release</code> should do everything for you! <code>--release</code> is quite necessary, at least for me, because otherwise it's a bit slow and the audio can get choppy sometimes.
+            </p>
         </article>
     </div>
 </body>
