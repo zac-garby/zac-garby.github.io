@@ -85,7 +85,7 @@ hr {
     border-bottom: 1px dashed rgb(100, 100, 100);
 }
 
-article img {
+article img.fullwidth {
     width: 100%;
 }
 
