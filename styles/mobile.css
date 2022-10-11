@@ -10,10 +10,12 @@ a.title {
     gap: 20px;
 }
 
-a.title img:first-child {
-    max-width: 100%;
-    max-height: 80px;
-    height: auto !important;
+div.title-images img {
+    height: 60px;
+}
+
+div.title-images {
+    flex-wrap: wrap;
 }
 
 }

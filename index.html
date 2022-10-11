@@ -13,13 +13,28 @@
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/mobile.css">
+
+    <script src="/scripts/title.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <a href="/" class="title">
-                <img src="/images/title.png" alt="Zac Garby">
-                <img src="/images/me.png" alt="A photo of Zac Garby." class="right">
+                <div class="title-images">
+                    <div class="word">
+                        <img src="/images/letters/Z/1.png" hidden onload="set(this, 'Z')">
+                        <img src="/images/letters/A/1.png" hidden onload="set(this, 'A')">
+                        <img src="/images/letters/C/1.png" hidden onload="set(this, 'C')">
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="word">
+                        <img src="/images/letters/G/1.png" hidden onload="set(this, 'G')">
+                        <img src="/images/letters/A/1.png" hidden onload="set(this, 'A')">
+                        <img src="/images/letters/R/1.png" hidden onload="set(this, 'R')">
+                        <img src="/images/letters/B/1.png" hidden onload="set(this, 'B')">
+                        <img src="/images/letters/Y/1.png" hidden onload="set(this, 'Y')">
+                    </div>
+                </div>
             </a>
             <div class="nav">
                 <a href="https://github.com/zac-garby">GitHub</a>
@@ -33,11 +48,15 @@
             </p>
 
             <p>
-                I'm currently the President of <a href="https://hacksocnotts.co.uk">HackSoc</a>, and also the Graphics Officer. I used to be the Development Secretary. I was an organiser of <a href="https://hacknotts.com">HackNotts 2021</a>, our annual hackathon (which actually happened in 2022,) and am currently the lead of <a href="https://hacknotts.com">HackNotts '23</a>. Also, I'm really interested in <a href="https://en.wikipedia.org/wiki/Johann_Sebastian_Bach">music</a>, and I play the guitar and the piano. I like to write music, too, but none of it is good enough to appear on this website (or any website, for that matter.)
+                I'm currently the President of <a href="https://hacksocnotts.co.uk">HackSoc</a>, and also the Graphics Officer. I used to be the Development Secretary. I was an organiser of <a href="https://hacknotts.com">HackNotts 2021</a>, our annual hackathon (which actually happened in 2022,) and am currently the lead of <a href="https://hacknotts.com">HackNotts '23</a>.
             </p>
 
             <p>
                 Most of my old projects are completely unfinished, but feel free to have a look around my <a href="https://github.com/zac-garby">GitHub</a> page nevertheless. There might also be some of my projects <a href="/stuff/">here</a>.
+            </p>
+
+            <p>
+                If you're wondering, the title of this website is constructed from letters generated using the Stable Diffusion AI.
             </p>
 
             <hr>

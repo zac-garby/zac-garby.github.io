@@ -22,10 +22,6 @@ header a.title {
     align-items: center;
 }
 
-header a.title img {
-    height: 80px;
-}
-
 header a.title img.right {
     width: 128px;
     height: 128px;
@@ -92,4 +88,21 @@ article img.fullwidth {
 article h2 {
     font-size: 1.2em;
     margin-bottom: -10px;
+}
+
+div.title-images {
+    display: flex;
+    height: 180px;
+    flex-direction: row;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title-images div.spacer {
+    width: 10px;
+}
+
+div.title-images img {
+    height: 80px;
 }
