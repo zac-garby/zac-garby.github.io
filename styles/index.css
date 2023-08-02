@@ -94,6 +94,10 @@ article h2 {
     margin-bottom: -10px;
 }
 
+article h3 {
+    font-size: 1em;
+}
+
 div.title-images {
     margin-bottom: 10px;
     display: flex;

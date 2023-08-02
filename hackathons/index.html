@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zac Garby</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/mobile.css">
+    <link rel="stylesheet" href="/hackathons/styles.css">
+
+    <script src="/scripts/title.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="/" class="title">
+                <div class="title-images">
+                    <div class="word">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'Z')">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'A')">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'C')">
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="word">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'G')">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'A')">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'R')">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'B')">
+                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'Y')">
+                    </div>
+                </div>
+            </a>
+            <div class="nav">
+                <a href="https://github.com/zac-garby">GitHub</a>
+                <a href="/cv.pdf">CV</a>
+                <a href="/hackathons">Hackathon Projects</a>
+            </div>
+        </header>
+        <article>
+            <h1>Hackathon Projects</h1>
+            <p>
+                I've been to a lot of hackathons over the years, and I thought that it's probably worth keeping a record of the projects I've worked on. Mostly for my own sake, but some of them are pretty cool so might be of general interest. Take a look!
+            </p>
+            <ul>
+                <li><a href="#knuckles">Knuckles</a> @ <em>HackSussex 2023</em></li>
+                <li><a href="#music-board">Music Board</a> @ <em>OxfordHack 2022</em></li>
+                <li><a href="#tomb-of-avarris">Tomb of Avarris</a> @ <em>HackTheMidlands 7.0</em></li>
+                <li><a href="#network-over-rube-goldberg-machine">Network over Rube Goldberg Machine</a> @ <em>AstonHack7</em></li>
+                <li><a href="#the-haskelltron-2000">The Haskelltron 2000</a> @ <em>HackNotts 2020</em></li>
+                <li><a href="#barry-the-dalek">Barry the Dalek</a> @ <em>ManMetHacks 2.0</em></li>
+                <li><a href="#routing">Routing</a> @ <em>HackNotts 2019</em></li>
+            </ul>
+
+            <hr>
+
+            <div class="project" id="knuckles">
+                <h2>
+                    Knuckles
+                    <span class="prize">Best in-person hack</span>
+                </h2>
+                <video controls width="200px" class="right">
+                    <source src="/hackathons/media/knuckles.mov" type="video/quicktime">
+                </video>
+                <p>
+                    <em>Knuckles</em> was a project I worked on for <em>HackSussex 2023</em> with a few friends&mdash;Sol, Jacob, George, and Xu. We'd seen videos of people using <a href="https://en.wikipedia.org/wiki/Nickel_titanium">nitinol</a>, an alloy of nickel and titanium, to lift weights! It's a shape-memory alloy, meaning that when heated, it contracts and returns to a set position. If its set position is a coiled spring, it can pull a not-insiginificant weight.
+                </p>
+                <p>
+                    We figured we could use this property to move the fingers on a robotic hand. Attaching these springs with one end at the top of the finger and one end at the base, contractions of the metal would contract the finger, just like real tendons. And this worked!
+                </p>
+                <p>
+                    Well, eventually it worked. Like all hackathons, we had our share of problems here. We went through four different prototype finger/tendon designs (initially just two wooden dowels with a knuckle made of heat-shrink&mdash;this was too flexible in the lateral direction) settling on a more complex design with elastic bands for tensioning, brass split-pins for limiting lateral movement, and rubber finger-pads to help with grip. We even set up a desk fan to help cool the nitinol more quickly, increasing response time.
+                </p>
+                <img src="/hackathons/media/knuckles2.png" width="250px" alt="" class="left">
+                <p>
+                    We also had problems with tempering the nitinol (i.e. heating it up and quickly cooling it to set its return shape). I can only imagine the <em>HackSussex</em> organisers were a little suspicious of us regularly heading outside, standing in a circle, and lighting many fires in the middle of the night. Sorry Josh: I'm sure that wasn't on your risk assessment.
+                </p>
+                <p>
+                    But in the end, we got it working. And quite nicely, if I may say so myself! We hooked it up to a computer vision system so we could control the fingers with our own, and then had fun activating the very satisfying, clicky, relay sounds for hours on end.
+                </p>
+                <p>
+                    Take a look at our <a href="https://devpost.com/software/knuckles">Devpost submission</a> for a more thorough breakdown, and more cool photos and videos!
+                </p>
+            </div>
+
+            <div class="project" id="music-board">
+                <h2>
+                    Music Board
+                    <span class="prize">"What The Hack?!" Prize</span>
+                </h2>
+                <p>
+                    A musical instrument we made at <em>OxfordHack 2022</em>!
+                </p>
+                <p>
+                    Made by myself, George, and Oli, this is a whiteboard-based musical instrument, using <em>OpenCV</em> in <em>Python</em>. We had three pens, and each colour corresponds to a different octave and instrument.
+                </p>
+                <img src="/hackathons/media/musicboard.png" alt="" width="250px" class="left">
+                <p>
+                    You can draw lines on the board, and these correspond to notes, which are played back live while you draw. And, if you draw a wavy line, the sound is wavy! It's actually pretty fun. Hard to make anything that sounds good, but it <em>is</em> possible (see Among Us Drip, below: the first official Music Board single).
+                </p>
+                <p>
+                    This was one of those projects which was completely determined by the random objects we decided to bring with us on the day. I had this big yellow clamp in my bag, and a webcam; and, at University at the time, I was working on a similar computer vision project for my Music &amp; Mixed Reality module. In fact, I was able to steal a lot of the code from this (mostly the webcam streaming and perspective correction).
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NgzUpNwwBAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>
+                    The project was great fun, and we won, I think quite fittingly, the <em>"What The Hack?!"</em> prize! Have a look at <a href="https://devpost.com/software/music-board-ym59oz">the Devpost submission</a> for a few more photos and a more detailed writeup.
+                </p>
+            </div>
+
+            <div class="project" id="tomb-of-avarris">
+                <h2>Tomb of Avarris</h2>
+                <p>
+                    <em>Tomb of Avarris</em> was a project I made at <em>HackTheMidlands 7.0</em> with Oli, Jacob, and Caleb. We wanted to make a fun party game (along the lines of <em>Jackbox</em>) and really focus on interesting mechanics as well as polish (something I generally don't put any thought into at all).
+                </p>
+                <img src="/hackathons/media/tombs1.jpg" alt="" width="300px" class="left">
+                <p>
+                    You start by picking a character, each of which has a different set of bonuses or features. The idea of the game, then, is that the group is presented with a series of challenges (such as <em>"There's a troll booth! How do you get past?"</em> or <em>"This door appears to be locked..."</em>). You've got to come up with a creative solution based on your character and any items you've picked up or found along the way.
+                </p>
+                <p>
+                    Given everyone's solutions to the hurdle, the players vote, and gold is distributed accordingly. It's actually great fun!
+                </p>
+                <img src="/hackathons/media/tombs2.jpg" alt="" width="300px" class="right">
+                <p>
+                    Overall, I'm really pleased with the level of polish we achieved with this one. It feels like something you could actually play, like as a real game, which is honestly not something I bother with very often.
+                </p>
+                <p>
+                    Given this, it's ironic that during our demo, the computer we were running the game on completely crashed and died, and as a result we couldn't actually show anybody anything... Oh well.
+                </p>
+                <p>
+                    Our extended writeup is on <a href="https://devpost.com/software/working-title-nl4ybs">our Devpost page</a>, if you're interested.
+                </p>
+            </div>
+
+            <div class="project" id="network-over-rube-goldberg-machine">
+                <h2>
+                    Network over Rube Goldberg Machine
+                    <span class="prize">First Place</span>
+                </h2>
+                <h3><em>or,</em> Whimsical Transmission Apparatus</h3>
+                <p>
+                    Our project for <em>AstonHack7</em>. Enter your bits into the Hyper Mainframe Interface, and watch the Rotational Actuation Manifold whizz up. Observe the spinning Quantum Rotational Code, and the buzz of the Autonomous Chromatic Semaphore. The flashing eye of the Imaging Matrix will aggregate all of this information, and send it to the Bio-informatic Terminal for your very own eyes to read. It's just like magic!
+                </p>
+                <img src="/hackathons/media/wta.jpg" alt="" class="fullwidth">
+                <p>
+                    In other words... What's the most silly way to transmit a few bits of data? We think this project is just that. With a spinning QR code ("one" on one side and "zero" on the other); a servo-based semaphore system; and, many others, the Whimsical Transmission Apparatus is a monster of a project which attempts to send data from one breadboard to another in the least efficient way possible.
+                </p>
+                <p>
+                    This project was really great fun, maybe one of my favourite of all the hackathons I've been to. Also, since we weren't allowed to solder, a lot of the connections were made by twisting split-pins around wires, which was... fun. This was made by me, James, Jacob, and Oli.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bUnD0GMt4Js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>
+                    Take a look at <a href="https://devpost.com/software/network-over-rube-goldberg-machine">our Devpost</a> for more detail and more silly descriptions of things.
+                </p>
+            </div>
+
+            <div class="project" id="the-haskelltron-2000">
+                <h2>
+                    The Haskelltron 2000
+                    <span class="prize">Hackathons UK "Hackiest Hack"</span>
+                </h2>
+                <p>
+                    I was in need of a way to let even more people know that Haskell is my favourite language. This is the solution. Also, a very fast way for me to develop a deep hatred for relays and MOSFETs (even if <em>it was my fault okay</em>).
+                </p>
+                <img src="/hackathons/media/haskelltron.jpg" alt="" width="320px" class="right">
+                <p>
+                    This was my project for <em>HackNotts 2020</em>, which was actually an online hackathon (COVID moment). That sucked, honestly. The best thing about hackathons is doing things with people. But it did make it easier to do a big hardware project, so I got this old receipt printer pretty cheap off Ebay.
+                </p>
+                <p>
+                    After printing out the entire Bee Movie script on a receipt, I got to coming up with an actual project idea. I've always wanted a portable computer in a briefcase to carry around, and even better if it can print results out on paper tape, so this was the perfect thing for it.
+                </p>
+                <p>
+                    Essentially, this is a Haskell terminal hooked up to a receipt printer and an LCD screen to show the line as you're typing. Sounds simple, right?
+                </p>
+                <p>
+                    Nope!
+                </p>
+                <p>
+                    Well, I won't go into too much detail here, but suffice to say, trying to hack the internals of a receipt printer is deceptively difficult. Especially for somebody like me who really doesn't know all that much about electricity. Problem was, I wanted the printer to pull the paper back in before printing, so it could print on consecutive lines without gaps, but also showing the user the text which had just been printed. There's quite a gap between the print head and the outside of the machine, so I had to selectively reverse the stepper motor to get it to do this. And oh, <em>what a pain that was.</em>
+                </p>
+                <p>
+                    Long story short, my MOSFET was the wrong way round. But do have a look at <a href="https://devpost.com/software/the-haskelltron-2000">my writeup on Devpost</a> for a much longer, detailed account of what exactly went wrong. In the end, though, it worked well, I think!
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ihw_dXDtOdc?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="project" id="barry-the-dalek">
+                <h2>Barry the Dalek</h2>
+
+                <p>
+                    Imagine if you could phone a Dalek and tell him what to do...
+                </p>
+                <img src="/hackathons/media/barry.jpg" alt="" width="250px" class="right">
+                <p>
+                    Making that dream a reality was mine and Peter's <em>ManMetHacks 2.0</em> hack: Barry the Dalek! In an attempt to grab the <em>Twilio</em> prize at the hackathon, we made an SMS interface to this toy dalek.
+                </p>
+                <p>
+                    Barry has a phone number, and you can text him commands. <code>gf</code>, for example, will instruct him to go forwards. <code>gb</code> will go backwards, and <code>tl</code> and <code>tr</code> will turn around. <code>s something</code> will have him speak the words "something" out of a super janky speaker and amp setup. It kind of sounds like a real dalek!
+                </p>
+                <p>
+                    Barry started out as a generic toy dalek, but we hacked him apart, pulled out his internals, and replaced them with a Pi. Needless to say, we ran into some issues here, and you can read much more about these on <a href="https://devpost.com/software/barry-the-dalek">our Devpost page</a> if you're interested.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AdsCB-ppNW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="project" id="routing">
+                <h2>Routing</h2>
+
+                <p>
+                    <em>Routing</em> was my first hackathon project ever! It was at <em>HackNotts 2019</em>, of course, and at the time I didn't really have a clue what a hackathon was or what to make for one.
+                </p>
+                <p>
+                    I was in my first year of Computer Science at the time, and we'd just had a few lectures on packet routing around the internet, so I figured I'd make a game based somehow on that. The idea is that the player builds up routing tables over time, connecting the devices together as they join the network and instructing the packets what their "next hop" should be.
+                </p>
+                <p>
+                    It's actually kinda fun. I ended up making it in Lua actually, using the <em>love2d</em> library, and as such my main hurdle was... Lua itself. Annoyingly, if I'd used Haskell (as I was originally planning), I'd have won the <em>Haskell Prize</em>, since nobody else entered the category. Either way, good fun. Do have a look at the slightly longer writeup on <a href="https://devpost.com/software/routing">my Devpost</a>.
+                </p>
+                <img src="/hackathons/media/routing.jpg" alt="" class="fullwidth">
+            </div>
+        </article>
+    </div>
+</body>
+</html>

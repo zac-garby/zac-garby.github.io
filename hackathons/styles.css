@@ -1,0 +1,34 @@
+div.project {
+    margin-top: 15px;
+    padding: 15px;
+    border: 2px solid black;    
+}
+
+div.project h2 {
+    margin-top: 0;
+}
+
+div.project p:last-child {
+    margin-bottom: 0;
+}
+
+.right {
+    float: right;
+    margin-left: 15px;
+}
+
+.left {
+    float: left;
+    margin-right: 15px;
+}
+
+span.prize {
+    font-weight: normal;
+    font-size: 70%;
+    background-color: rgb(255, 255, 227);
+    border: 1px solid rgb(231, 231, 183);
+    border-radius: 3px;
+    padding: 2px 5px;
+    vertical-align: 1px;
+    margin-left: 5px;
+}
