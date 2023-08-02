@@ -101,7 +101,7 @@ article h3 {
 div.title-images {
     margin-bottom: 10px;
     display: flex;
-    height: 80px;
+    min-height: 80px;
     flex-direction: row;
     gap: 7px;
     justify-content: center;

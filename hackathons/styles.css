@@ -22,6 +22,10 @@ div.project p:last-child {
     margin-right: 15px;
 }
 
+.left, .right {
+    max-width: calc(100% - 30px);
+}
+
 span.prize {
     font-weight: normal;
     font-size: 70%;
@@ -31,4 +35,15 @@ span.prize {
     padding: 2px 5px;
     vertical-align: 1px;
     margin-left: 5px;
+}
+
+iframe {
+    width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+    .left, .right {
+        float: none;
+        width: calc(100% - 30px);
+    }
 }
