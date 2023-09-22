@@ -13,58 +13,39 @@
 
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/mobile.css">
-
-    <script src="/scripts/title.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <a href="/" class="title">
-                <div class="title-images">
-                    <div class="word">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'Z')">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'A')">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'C')">
+        <article class="split">
+            <div>
+                <header>
+                    <div class="nav">
+                        <a href="/" class="current">Zac Garby</a>
+                        <a href="https://github.com/zac-garby">GitHub</a>
+                        <a href="/cv.pdf">CV</a>
+                        <a href="/hackathons">Hackathon Projects</a>
                     </div>
-                    <div class="spacer"></div>
-                    <div class="word">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'G')">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'A')">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'R')">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'B')">
-                        <img src="/images/letters/Z/1.jpg" hidden onload="set(this, 'Y')">
-                    </div>
-                </div>
-            </a>
-            <div class="nav">
-                <a href="https://github.com/zac-garby">GitHub</a>
-                <a href="/cv.pdf">CV</a>
-                <a href="/hackathons">Hackathon Projects</a>
+                </header>
+                <p>
+                    Hi! I'm Zac, a Computer Science MSci graduate from <a href="https://www.nottingham.ac.uk">The University of Nottingham</a>, and I'm going to be starting a PhD there this coming October!
+                </p>
+                <p>
+                    I'm really interested in programming languages (mostly <a href="https://www.haskell.org">functional</a> <a href="https://github.com/zac-garby/diss/tree/master/fugue">ones</a>) and how they can be made easier to use (e.g. interactive programming, clever type systems), plus things like program synthesis, holes, and anything else to do with incomplete programs. For my 4th year dissertation, I came up with some novel techniques for synthesising recursive functions (have a look at <a href="/paper.pdf">my paper</a> - it should be readable without any background in the area!) and implemented them in my toy programming language, <a href="https://github.com/zac-garby/diss/tree/master/fugue">Fugue</a>.
+                </p>
+    
+                <p>
+                    Most of my old projects are completely unfinished, but feel free to have a look around my <a href="https://github.com/zac-garby">GitHub</a> page nevertheless. There's some cool stuff there! Also, I've written up all of the <a href="/hackathons">hackathon projects</a> I've done over the years.
+                </p>
+    
+                <hr>
+    
+                <p>
+                    If you want to contact me, the best way is probably through Discord, where I'm <code>zacmg</code>. Or, you can email me at <code>me &lt;at&gt; this domain . co . uk</code>.
+                </p>
             </div>
-        </header>
-        <article>
-            <p>
-                Hi! I'm Zac, a Computer Science MSci graduate from <a href="https://www.nottingham.ac.uk">The University of Nottingham</a>, and I'm going to be starting a PhD there this coming October!
-            </p>
-            <p>
-                I'm really interested in programming languages (mostly <a href="https://www.haskell.org">functional</a> <a href="https://github.com/zac-garby/diss/tree/master/fugue">ones</a>) and how they can be made easier to use (e.g. interactive programming, clever type systems), plus things like program synthesis, holes, and anything else to do with incomplete programs. I'm also really interested in type theory. I'm pretty sure, in the future, dependently typed, interactive, functional programming languages will be the norm&mdash;but for the time being I will use Haskell for everything, instead.
-            </p>
-
-            <p>
-                Most of my old projects are completely unfinished, but feel free to have a look around my <a href="https://github.com/zac-garby">GitHub</a> page nevertheless. There's some cool stuff there!
-            </p>
-
-            <hr>
-
-            <p>
-                If you want to contact me, the best way is probably through Discord, where I'm <code>zacmg</code>. Or, you can email me at <code>me &lt;at&gt; this domain . co . uk</code>.
-            </p>
-
-            <hr>
-
-            <p>
-                <a href="https://magicalinternetpoints.com" class="bare"><img src="https://magicalinternetpoints.com/badge/zac" alt=""></a>
-            </p>
+            <div>
+                <img src="/images/me.jpeg" alt="" title="A blurry photo of me bouldering in a quarry in Portland, Dorset. September 2023">
+            </div>
         </article>
     </div>
 </body>

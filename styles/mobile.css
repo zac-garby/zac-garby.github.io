@@ -1,29 +1,32 @@
-@media screen and (max-width: 540px) {
-
-div.wrapper {
-    margin-top: 50px;
-}
-
-a.title {
-    flex-direction: column;
-    justify-items: right;
-    gap: 20px;
-}
-
-div.title-images img {
-    height: 50px;
-}
-
-div.title-images {
-    flex-wrap: wrap;
-}
-
-}
-
 @media screen and (max-width: 740px) {
 
-div.wrapper {
-    margin-top: 50px;
+    div.wrapper {
+        margin-top: 50px;
+    }
+
+    article.split {
+        grid-template-columns: 60% auto;
+    }
+
 }
+
+@media screen and (max-width: 540px) {
+
+    div.wrapper {
+        margin-top: 50px;
+    }
+
+    div.title-images img {
+        height: 50px;
+    }
+
+    div.title-images {
+        flex-wrap: wrap;
+    }
+
+    article.split {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
 
 }
