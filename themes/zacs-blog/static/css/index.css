@@ -23,7 +23,7 @@ header a.title {
 header div.nav {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
 }
 
@@ -43,9 +43,11 @@ p a.bare {
 }
 
 div.nav a {
+    display: block;
+    width: calc(50% - 5px);
     text-decoration: none;
     color: white;
-    padding: 0 5px 0 5px;
+    padding: 4px 8px 4px 8px;
 }
 
 div.nav a:nth-child(1) {
@@ -199,7 +201,7 @@ a.image-link {
 }
 
 ul.page-list {
-    padding-left: 0;
+    padding-left: 25px;
 }
 
 ul.page-list li {
