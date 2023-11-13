@@ -1,0 +1,26 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Zac Garby'
+theme = 'zacs-blog'
+
+[menu]
+    [[menu.main]]
+        name = "Zac Garby"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        name = "Hackathon Projects"
+        url = "/hackathons"
+        weight = 2
+    
+    [[menu.main]]
+        name = "GitHub"
+        url = "https://github.com/zac-garby"
+        weight = 3
+    
+    [[menu.main]]
+        name = "CV"
+        url = "/files/cv.pdf"
+        weight = 4
+    

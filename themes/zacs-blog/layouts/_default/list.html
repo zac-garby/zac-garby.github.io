@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+
+<ul class="page-list">
+    {{ range (sort .Pages "Date" "desc") }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ with .Params.hackathon }}
+            <br>
+            <span class="hackathon">@ {{ . }}</span>
+            {{ end }}
+            {{ with .Params.prize }}
+                <span class="prize">{{ . }}</span>
+            {{ end }}
+        </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ define "sidebar" }}
+{{ with .Params.side_photo }}
+<img src="{{ . }}" alt="">
+{{ end }}
+{{ end }}

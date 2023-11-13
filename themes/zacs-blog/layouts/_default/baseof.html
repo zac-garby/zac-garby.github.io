@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{- partial "head.html" -}}
+</head>
+<body>
+    <div class="wrapper">
+
+        <article class="split">
+            <div>
+                {{- partial "header.html" . -}}
+                
+                <div class="main">
+                    {{- block "main" . }}{{- end }}
+                </div>
+            </div>
+            <div>
+                {{- block "sidebar" . }}{{- end }}
+            </div>
+        </article>
+    </div>
+</body>
+</html>

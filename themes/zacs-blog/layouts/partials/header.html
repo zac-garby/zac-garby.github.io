@@ -1,0 +1,11 @@
+<header>
+    <div class="nav">
+        {{ range .Site.Menus.main }}
+        {{ if eq .Name $.Name }}
+            <a href="{{ .URL }}" class="current">{{ .Name }}</a>
+        {{ else }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+        {{ end }}
+    </div>
+</header>

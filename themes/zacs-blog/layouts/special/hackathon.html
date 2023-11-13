@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div id="knuckles">
+    <h2>
+        {{ .Title }}
+        {{ with .Params.prize }}
+            <span class="prize">{{ . }}</span>
+        {{ end }}
+    </h2>
+    {{ with .Params.video }}
+    <iframe height="315" src="{{ . }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    {{ end }}
+    {{ .Content }}
+</div>
+{{ end }}
+
+{{ define "sidebar" }}
+<div class="hackathon-photos">
+    {{ range .Params.photos }}
+        <a href="{{ . }}" class="image-link">
+            <img src="{{ . }}">
+        </a>
+    {{ end }}
+</div>
+{{ end }}
