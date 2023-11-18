@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+
+<ul class="page-list">
+    {{ range (sort .Pages "Date" "desc") }}
+        <li>
+            {{ time.Format "2 Jan 2006" .Date }}
+            &mdash;
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ define "sidebar" }}
+{{ with .Params.side_photo }}
+<img src="{{ . }}" alt="">
+{{ end }}
+{{ end }}

@@ -1,7 +1,5 @@
 ---
 title: "Musicboard"
-type: "special"
-layout: "hackathon"
 prize: "What the Hack!? prize"
 photos:
     - "/images/hackathons/musicboard.png"

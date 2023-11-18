@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+{{ .Content }}
+
+{{ end }}
+
+{{ define "sidebar" }}
+{{ with .Params.side_photo }}
+<img src="{{ . }}" alt="">
+{{ end }}
+{{ end }}

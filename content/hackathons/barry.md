@@ -1,7 +1,5 @@
 ---
 title: "Barry the Dalek"
-type: "special"
-layout: "hackathon"
 photos:
     - "/images/hackathons/barry.jpg"
     - "/images/hackathons/barry2.jpg"

@@ -1,7 +1,5 @@
 ---
 title: "Network Over Rube-Goldberg Machine"
-type: "special"
-layout: "hackathon"
 prize: "First Place & 'Communication' Prize"
 photos:
     - "/images/hackathons/wta.jpg"

@@ -1,7 +1,5 @@
 ---
 title: "Tomb of Avarris"
-type: "special"
-layout: "hackathon"
 photos:
     - "/images/hackathons/tombs1.jpg"
     - "/images/hackathons/tombs2.jpg"

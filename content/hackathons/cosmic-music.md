@@ -1,7 +1,7 @@
 ---
 title: "Cosmic Music"
-type: "special"
-layout: "hackathon"
+type: "hackathons"
+layout: "single"
 photos:
     - "/images/hackathons/cosmic-ray.png"
     - "/images/hackathons/banana.jpg"

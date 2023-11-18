@@ -1,7 +1,5 @@
 ---
 title: "Haskelltron 2000"
-type: "special"
-layout: "hackathon"
 photos:
     - "/images/hackathons/haskelltron.jpg"
     - "/images/hackathons/haskelltron2.jpg"

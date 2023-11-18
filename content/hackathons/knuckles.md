@@ -1,7 +1,5 @@
 ---
 title: "Knuckles"
-type: "special"
-layout: "hackathon"
 prize: "Best in-person hack"
 photos:
     - "/images/hackathons/knuckles1.jpg"

@@ -1,7 +1,5 @@
 ---
 title: "Routing Game"
-type: "special"
-layout: "hackathon"
 hackathon: "HackNotts 2019"
 photos:
     - "/images/hackathons/routing.jpg"
