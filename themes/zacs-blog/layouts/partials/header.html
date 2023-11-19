@@ -1,7 +1,7 @@
 <header>
     <div class="nav">
         {{ range .Site.Menus.main }}
-        {{ if eq .Name $.Name }}
+        {{ if eq .Name $.FirstSection.Name }}
             <a href="{{ .URL }}" class="current">{{ .Name }}</a>
         {{ else }}
             <a href="{{ .URL }}">{{ .Name }}</a>
