@@ -44,41 +44,47 @@ p a.bare {
 
 div.nav a {
     display: block;
-    width: calc(50% - 5px);
+    width: 100%;
     text-decoration: none;
     color: white;
     padding: 4px 8px 4px 8px;
 }
 
-div.nav a:nth-child(1) {
+div.nav div {
+    display: block;
+    width: calc(50% - 5px);
+    padding: 0;
+}
+
+div.nav > *:nth-child(1) {
     background-color: rgb(97, 160, 231);
 }
 
-div.nav a:nth-child(2) {
+div.nav > *:nth-child(2) {
     background-color: rgb(222, 70, 115);
 }
 
-div.nav a:nth-child(3) {
+div.nav > *:nth-child(3) {
     background-color: rgb(225, 174, 80);
 }
 
-div.nav a:nth-child(4) {
+div.nav > *:nth-child(4) {
     background-color: rgb(221, 107, 175);
 }
 
-div.nav a:nth-child(1).current {
+div.nav > *:nth-child(1).current {
     outline: 6px solid rgba(0, 119, 255, 0.5);
 }
 
-div.nav a:nth-child(2).current {
+div.nav > *:nth-child(2).current {
     outline: 4px solid rgba(255, 0, 76, 0.5);
 }
 
-div.nav a:nth-child(3).current {
+div.nav > *:nth-child(3).current {
     outline: 4px solid rgba(255, 166, 0, 0.5);
 }
 
-div.nav a:nth-child(4).current {
+div.nav > *:nth-child(4).current {
     outline: 6px solid rgba(255, 0, 153, 0.5);
 }
 

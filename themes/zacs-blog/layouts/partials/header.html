@@ -2,9 +2,17 @@
     <div class="nav">
         {{ range .Site.Menus.main }}
         {{ if eq .Name $.FirstSection.Name }}
-            <a href="{{ .URL }}" class="current">{{ .Name }}</a>
+        <div class="current">
+            <a href="{{ .URL }}" class="current">{{ .Name }}
+            {{ if not (eq .Name $.Name) }}
+                *
+            {{ end }}
+            </a>
+        </div>
         {{ else }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
+            <div>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+            </div>
         {{ end }}
         {{ end }}
     </div>
