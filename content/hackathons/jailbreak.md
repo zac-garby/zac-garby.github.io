@@ -5,6 +5,7 @@ photos:
     - "/images/hackathons/jailbreak2.jpg"
     - "/images/hackathons/jailbreak3.png"
     - "/images/hackathons/jailbreak4.png"
+    - "/images/hackathons/jailbreak5.jpg"
 prize: "First Place"
 video: "https://www.youtube.com/embed/m-_xhx7D1ZM"
 date: "2024-01-27"
