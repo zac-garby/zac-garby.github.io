@@ -92,6 +92,12 @@ p {
     text-align: justify;
 }
 
+p.date {
+    margin: 0;
+    margin-top: -5px;
+    font-style: italic;
+}
+
 img.email {
     height: 1em;
     margin-left: 5px;

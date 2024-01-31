@@ -7,9 +7,10 @@
     {{ range (sort .Pages "Date" "desc") }}
         <li>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ $date := .Params.date.Format "2 Jan '06" }}
             {{ with .Params.hackathon }}
             <br>
-            <span class="hackathon">@ {{ . }}</span>
+            <span class="hackathon">@ {{ . }} &mdash; {{ $date }}</span>
             {{ end }}
             {{ with .Params.prize }}
                 <span class="prize">{{ . }}</span>

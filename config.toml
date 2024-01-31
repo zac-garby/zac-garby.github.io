@@ -5,22 +5,22 @@ theme = 'zacs-blog'
 
 [menu]
     [[menu.main]]
-        name = "Zac Garby"
+        name = "zac"
         url = "/"
         weight = 1
 
     [[menu.main]]
-        name = "Hackathon Projects"
+        name = "hack"
         url = "/hackathons"
         weight = 2
     
     [[menu.main]]
-        name = "Blog"
+        name = "blog"
         url = "/posts"
         weight = 3
     
     [[menu.main]]
-        name = "CV"
+        name = "cv"
         url = "/files/cv.pdf"
         weight = 4
     

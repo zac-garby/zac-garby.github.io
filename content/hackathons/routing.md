@@ -1,6 +1,7 @@
 ---
 title: "Routing Game"
 hackathon: "HackNotts 2019"
+date: "2019-11-16"
 photos:
     - "/images/hackathons/routing.jpg"
 ---
