@@ -102,10 +102,6 @@ p.devpost {
     margin: 0;
 }
 
-a.hackathon {
-    font-weight: bold;
-}
-
 a.devpost {
     font-size: 0.8em;
     margin-left: 5px;
@@ -200,20 +196,19 @@ div.project p:last-child {
     max-width: calc(100% - 30px);
 }
 
+li.hackathon {
+    line-height: 1.5em;
+}
+
 span.prize {
     font-weight: normal;
     font-size: 70%;
-    background-color: rgb(255, 255, 227);
-    border: 1px solid rgb(231, 231, 183);
+    background-color: rgba(247, 247, 142, 0.438);
+    border: 1px solid rgb(126, 15, 0);
     color: rgb(126, 15, 0);
     border-radius: 3px;
-    padding: 2px 5px;
+    padding: 3px 5px;
     vertical-align: 1px;
-    margin-left: 5px;
-}
-
-span.prize::before {
-    content: "🏆 "
 }
 
 iframe {
