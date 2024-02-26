@@ -98,6 +98,10 @@ p.date {
     font-style: italic;
 }
 
+p.devpost {
+    margin: 0;
+}
+
 img.email {
     height: 1em;
     margin-left: 5px;

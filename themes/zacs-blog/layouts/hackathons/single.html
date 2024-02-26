@@ -6,7 +6,14 @@
             <span class="prize">{{ . }}</span>
         {{ end }}
     </h2>
-    <p class="date">{{ .Params.date.Format "2 January 2006" }}</p>
+    <p class="date">
+        {{ .Params.date.Format "2 January 2006" }}
+    </p>
+    {{ with .Params.devpost }}
+        <p class="devpost">
+            <a href="{{ . }}">Devpost submission</a>
+        </p>
+    {{ end }}
     {{ with .Params.video }}
     <iframe height="315" src="{{ . }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     {{ end }}
