@@ -5,7 +5,7 @@ photos:
     - "/images/hackathons/musicboard.png"
     - "/images/hackathons/musicboard2.jpg"
 video: "https://www.youtube.com/embed/NgzUpNwwBAU"
-date: "2022-09-12"
+date: "2022-11-12"
 hackathon: "OxfordHack 2022"
 ---
 
