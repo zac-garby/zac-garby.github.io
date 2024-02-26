@@ -8,6 +8,7 @@ photos:
 video: "https://www.youtube.com/embed/prHXzJ-Dfnk"
 date: "2023-02-18"
 hackathon: "HackSussex 2023"
+devpost: "https://devpost.com/software/knuckles"
 ---
 
 *Knuckles* was a project I worked on for *HackSussex 2023* with a few friends—Sol, Jacob, George, and Xu. We'd seen videos of people using [nitinol](https://en.wikipedia.org/wiki/Nickel_titanium), an alloy of nickel and titanium, to lift weights! It's a shape-memory alloy, meaning that when heated, it contracts and returns to a set position. If its set position is a coiled spring, it can pull a not-insignificant weight.

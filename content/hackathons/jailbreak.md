@@ -10,6 +10,7 @@ prize: "First Place"
 video: "https://www.youtube.com/embed/m-_xhx7D1ZM"
 date: "2024-01-27"
 hackathon: "Royal Hackaway v7"
+devpost: "https://devpost.com/software/jailbreak-patku4"
 ---
 
 My first hackathon in quite some time! Royal Hackaway, at Royal Holloway University, was a great one as hackathons go. Transport there was a pain, so I was up at 5 on Saturday morning (still late, mind you!) and got home at midnight on Sunday. All worth it though, of course.

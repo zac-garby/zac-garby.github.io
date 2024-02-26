@@ -10,6 +10,7 @@ prize: "Hackiest Hack"
 video: "https://www.youtube.com/embed/Ihw_dXDtOdc"
 date: "2020-09-01"
 hackathon: "HackNotts 2020"
+devpost: "https://devpost.com/software/the-haskelltron-2000"
 ---
 
 I was in need of a way to let even more people know that Haskell is my

@@ -102,6 +102,17 @@ p.devpost {
     margin: 0;
 }
 
+a.hackathon {
+    font-weight: bold;
+}
+
+a.devpost {
+    font-size: 0.8em;
+    margin-left: 5px;
+    font-style: italic;
+    color: rgb(121, 73, 87);
+}
+
 img.email {
     height: 1em;
     margin-left: 5px;
@@ -194,10 +205,15 @@ span.prize {
     font-size: 70%;
     background-color: rgb(255, 255, 227);
     border: 1px solid rgb(231, 231, 183);
+    color: rgb(126, 15, 0);
     border-radius: 3px;
     padding: 2px 5px;
     vertical-align: 1px;
     margin-left: 5px;
+}
+
+span.prize::before {
+    content: "🏆 "
 }
 
 iframe {

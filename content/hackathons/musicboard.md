@@ -7,6 +7,7 @@ photos:
 video: "https://www.youtube.com/embed/NgzUpNwwBAU"
 date: "2022-11-12"
 hackathon: "OxfordHack 2022"
+devpost: "https://devpost.com/software/music-board-ym59oz"
 ---
 
 A musical instrument we made at *OxfordHack 2022*!

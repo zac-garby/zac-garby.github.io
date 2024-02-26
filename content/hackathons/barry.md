@@ -6,6 +6,7 @@ photos:
 video: "https://www.youtube.com/embed/AdsCB-ppNW4"
 date: 2020-02-01
 hackathon: "ManMetHacks 2.0"
+devpost: "https://devpost.com/software/barry-the-dalek"
 ---
 
 Imagine if you could phone a Dalek and tell him what to do...

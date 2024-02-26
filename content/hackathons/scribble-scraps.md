@@ -10,6 +10,7 @@ prize: "First Place"
 video: "https://www.youtube.com/embed/rDuBIISVbTI?si=-4lODe3xoR0IVFxj&amp;start=9037"
 date: "2024-02-17"
 hackathon: "HackSussex 2024"
+devpost: "https://devpost.com/software/scribble-scraps"
 ---
 
 Sussex is a very long way away from Nottingham, but this one was well worth the journey!

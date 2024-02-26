@@ -9,6 +9,7 @@ photos:
 video: "https://www.youtube.com/embed/4vXmYTL9lhw"
 date: 2023-09-04
 hackathon: "HackNotts '84"
+devpost: "https://devpost.com/software/cosmic-music"
 ---
 
 For HackNotts '84 (which took place in 2023), we wanted to do something with hardware.

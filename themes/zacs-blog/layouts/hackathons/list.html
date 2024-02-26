@@ -6,7 +6,10 @@
 <ul class="page-list">
     {{ range (sort .Pages "Date" "desc") }}
         <li>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <a class="hackathon" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ with .Params.devpost }}
+            <a class="devpost" href="{{ . }}">(Devpost)</a>
+            {{ end }}
             {{ $date := .Params.date.Format "2 Jan '06" }}
             {{ with .Params.hackathon }}
             <br>

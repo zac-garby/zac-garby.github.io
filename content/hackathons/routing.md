@@ -4,6 +4,7 @@ hackathon: "HackNotts 2019"
 date: "2019-11-16"
 photos:
     - "/images/hackathons/routing.jpg"
+devpost: "https://devpost.com/software/routing"
 ---
 
 *Routing* was my first hackathon project ever! It was at *HackNotts 2019*, of

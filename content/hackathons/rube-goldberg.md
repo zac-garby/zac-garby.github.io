@@ -8,6 +8,7 @@ photos:
 video: "https://www.youtube.com/embed/bUnD0GMt4Js"
 date: "2021-12-01"
 hackathon: "AstonHack7"
+devpost: "https://devpost.com/software/network-over-rube-goldberg-machine"
 ---
 
 Our project for *AstonHack7*. Enter your bits into the Hyper Mainframe Interface,

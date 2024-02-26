@@ -6,6 +6,7 @@ photos:
     - "/images/hackathons/tombs3.jpg"
 date: "2022-10-01"
 hackathon: "HackTheMidlands 7.0"
+devpost: "https://devpost.com/software/working-title-nl4ybs"
 ---
 
 *Tomb of Avarris* was a project I made at *HackTheMidlands 7.0* with Oli,
