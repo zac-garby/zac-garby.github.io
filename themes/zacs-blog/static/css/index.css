@@ -58,18 +58,22 @@ div.nav div {
 
 div.nav > *:nth-child(1) {
     background-color: rgb(97, 160, 231);
+    rotate: -1deg;
 }
 
 div.nav > *:nth-child(2) {
     background-color: rgb(222, 70, 115);
+    rotate: 0.4deg;
 }
 
 div.nav > *:nth-child(3) {
     background-color: rgb(225, 174, 80);
+    rotate: 0.8deg;
 }
 
 div.nav > *:nth-child(4) {
     background-color: rgb(221, 107, 175);
+    rotate: -0.3deg;
 }
 
 div.nav > *:nth-child(1).current {
