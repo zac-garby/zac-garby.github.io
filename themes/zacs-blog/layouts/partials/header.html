@@ -1,10 +1,10 @@
 <header>
     <div class="nav">
         {{ range .Site.Menus.main }}
-        {{ if eq .Name $.FirstSection.Name }}
+        {{ if or (eq .Name $.FirstSection.Name) (and (eq .Name "zac") (eq $.FirstSection.Name "Zac Garby")) }}
         <div class="current">
             <a href="{{ .URL }}" class="current">{{ .Name }}
-            {{ if not (eq .Name $.Name) }}
+            {{ if and (not (eq .Name $.Name)) (not (eq .Name "zac")) }}
                 *
             {{ end }}
             </a>
