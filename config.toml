@@ -3,24 +3,27 @@ languageCode = 'en-us'
 title = 'Zac Garby'
 theme = 'zacs-blog'
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [menu]
     [[menu.main]]
-        name = "zac"
+        name = "Zac Garby"
         url = "/"
         weight = 1
 
     [[menu.main]]
-        name = "hack"
+        name = "Hackathons"
         url = "/hackathons"
         weight = 2
     
     [[menu.main]]
-        name = "blog"
+        name = "Publications"
         url = "/posts"
         weight = 3
     
     [[menu.main]]
-        name = "cv"
+        name = "CV"
         url = "/files/cv.pdf"
         weight = 4
     

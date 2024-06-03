@@ -6,9 +6,12 @@
 <ul class="page-list">
     {{ range (sort .Pages "Date" "desc") }}
         <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>,
+            {{ if (isset .Params "year") }}
+            {{ .Params.year }}
+            {{ else }}
             {{ time.Format "2 Jan 2006" .Date }}
-            &mdash;
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end }}
         </li>
     {{ end }}
 </ul>
