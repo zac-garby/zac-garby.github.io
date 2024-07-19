@@ -1,7 +1,9 @@
 {{ define "main" }}
 
 <h2>{{ .Title }}</h2>
-{{ .Content }}
+<p>
+    {{ .Content }}
+</p>
 
 <ul class="page-list">
     {{ range (sort .Pages "Date" "desc") }}

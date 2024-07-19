@@ -37,7 +37,7 @@ a, a * {
     color: rgb(222, 70, 115);
 }
 
-p a:hover {
+p a:hover, ul.page-list a:hover {
     text-decoration: none;
     color: white;
     background-color: rgb(222, 70, 115);
@@ -268,4 +268,13 @@ ul.page-list span.hackathon {
 
 article.split a img.badge {
     margin-top: 5px;
+}
+
+ul.page-list p.links {
+    margin-top: 0;
+}
+
+p.links a {
+    font-size: 0.8em;
+    font-family: monospace;
 }

@@ -8,13 +8,28 @@
         <li>
             <a href="{{ .Permalink }}">{{ .Title }}</a>,
             {{ if (isset .Params "year") }}
-            {{ .Params.year }}
+                {{ .Params.year }}
             {{ else }}
-            {{ time.Format "2 Jan 2006" .Date }}
+                {{ time.Format "2 Jan 2006" .Date }}
+            {{ end }}
+            {{ with .Params.links }}
+                <p class="links">
+                {{ range . }}
+                    <a href="{{ .link }}">[{{ .name }}]</a>
+                {{ end }}
+                </p>
             {{ end }}
         </li>
     {{ end }}
 </ul>
+
+{{ with .Params.links }}
+<p class="links">
+{{ range . }}
+    <a href="{{ .link }}">[{{ .name }}]</a>
+{{ end }}
+</p>
+{{ end }}
 {{ end }}
 
 {{ define "sidebar" }}

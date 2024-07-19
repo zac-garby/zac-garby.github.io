@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div id="knuckles">
+<div>
     <h2>
         {{ .Title }}
         {{ with .Params.prize }}
@@ -9,7 +9,9 @@
     {{ with .Params.video }}
     <iframe height="315" src="{{ . }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     {{ end }}
-    {{ .Content }}
+    <p>
+        {{ .Content }}
+    </p>
 </div>
 {{ end }}
 
