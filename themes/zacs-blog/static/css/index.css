@@ -278,3 +278,9 @@ p.links a {
     font-size: 0.8em;
     font-family: monospace;
 }
+
+div.previews {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
