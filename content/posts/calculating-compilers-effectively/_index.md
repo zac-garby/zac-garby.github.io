@@ -11,6 +11,8 @@ links:
     link: https://zenodo.org/records/12771956
   - name: bib
     link: paper.bib
+  - name: video talk
+    link: https://tinyurl.com/ye4f9kfe
 ---
 
 Zac Garby, Graham Hutton, and Patrick Bahr
