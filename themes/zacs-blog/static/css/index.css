@@ -129,8 +129,16 @@ hr {
     border-bottom: 1px solid rgb(100, 100, 100);
 }
 
+article {
+    position: relative;
+}
+
 article img.fullwidth {
     width: 100%;
+}
+
+article h1, article h2, article h3 {
+    color: rgb(201, 47, 93);
 }
 
 article h2 {
@@ -283,4 +291,27 @@ div.previews {
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto;
+}
+
+article section {
+    padding: 10px 0;
+}
+
+article section.box {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(249, 220, 220);
+    background-color: rgb(222, 70, 115);
+}
+
+article section.box * {
+    color: rgb(251, 241, 245);
+}
+
+article section *:first-child {
+    margin-top: 0;
+}
+
+article section *:last-child {
+    margin-bottom: 0;
 }

@@ -6,6 +6,7 @@
 <ul class="page-list">
     {{ range (sort .Pages "Date" "desc") }}
         <li>
+            [{{ .Params.In }}]
             <a href="{{ .Permalink }}">{{ .Title }}</a>,
             {{ if (isset .Params "year") }}
                 {{ .Params.year }}

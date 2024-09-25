@@ -15,6 +15,24 @@
     </p>
 </section>
 
+<section class="box">
+    <h2>Publications & Blog</h2>
+    <ul>
+        {{ range where .Site.Pages "Type" "in" "posts" }}
+        {{ if (isset .Params "in") }}
+        <li>
+            [{{ .Params.In }}, {{ if (isset .Params "year") }}
+            {{ .Params.year }}]
+        {{ else }}
+            {{ time.Format "2 Jan 2006" .Date }}]
+        {{ end }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</section>
+
 <section>
     <h2>Projects and Websites and Things</h2>
     <p>
@@ -61,22 +79,72 @@
         <li><a href="https://hacksocnotts.co.uk">https://hacksocnotts.co.uk</a>, the page for HackSoc, the hacking (as in hackathons), "recreational" programming, and computer science society at the University of Nottingham. (I used to be the president.) It's no longer maintained by me, though.</li>
         <li><a href="https://nottsmun.uk/">https://nottsmun.uk</a>, the page for NOTTSMUN, the University of Nottingham's model united nations conference.</li>
     </ul>
+</section>
+<section class="box">
+    <h2>Talks and Workshops</h2>
     <p>
-        I've also appeared on <a href="https://www.youtube.com/@Computerphile">Computerphile</a>! My video is about <a href="https://en.wikipedia.org/wiki/L-system">L-systems</a>, and you can watch it <a href="https://www.youtube.com/watch?v=puwhf-404Xc&t=583s">here!</a>
+        I really enjoy talking to people about stuff, and also giving workshops and teaching people about things. Here's a list of some of these. Unfortunately most weren't filmed, but some were!
     </p>
+    <ul>
+        <li>
+            <em>7 Sep '24</em> <a href="https://www.youtube.com/watch?v=wJ6GtZHK1Sw">Calculating Compilers Effectively @ ICFP</a>
+        </li>
+        <li>
+            <em>29 Feb '24</em> <a href="https://www.youtube.com/watch?v=puwhf-404Xc">Computerphile: L-systems video</a>
+        </li>
+        <li>
+            <em>2 Nov '23</em> <a href="https://hacksocnotts.co.uk/events/2023-11-02-the-making-of-a-programming-language/">Talk: "The Making of a Programming Language"</a>
+        </li>
+        <li>
+            <em>17 Nov '22</em> <a href="https://hacksocnotts.co.uk/events/2022-11-17-game-development-workshop-ii-shaders/">Game development workshop II: Shaders</a>
+        </li>
+        <li>
+            <em>10 Nov '22</em> <a href="https://hacksocnotts.co.uk/events/2022-11-10-game-development-workshop/">Game development workshop</a>
+        </li>
+        <li>
+            <em>27 Sep '22</em> <a href="https://hacksocnotts.co.uk/events/2022-09-27-hacksoc-taster-welcome-week-talks/">HackSoc welcome week talk</a>
+        </li>
+        <li>
+            <em>28 Mar '23</em> <a href="https://www.youtube.com/watch?v=ZKSY8DfiFs8&t=537s">Lightining talk: "The Future of Programming"</a>
+        </li>
+        <li>
+            <em>1 Mar '22</em> <a href="https://hacksocnotts.co.uk/events/2022-03-01-python-internals-talk/">Python internals talk</a>
+        </li>
+        <li>
+            <em>24 Feb '22</em> <a href="https://hacksocnotts.co.uk/events/2022-02-24-unity-workshop/">Unity game-dev workshop</a>
+        </li>
+        <li>
+            <em>14 Dec '21</em> <a href="https://hacksocnotts.co.uk/events/2021-12-14-blog-workshop/">Making a blog and getting it online!</a>
+        </li>
+        <li>
+            <em>16 Nov '21</em> <a href="https://hacksocnotts.co.uk/events/2021-go-workshop/">Introduction to Golang</a>
+        </li>
+        <li>
+            <em>12 Oct '21</em> <a href="https://hacksocnotts.co.uk/events/2021-discord-bot-workshop/">Discord bots workshop</a>
+        </li>
+        <li>
+            <em>23 Sep '21</em> <a href="https://hacksocnotts.co.uk/events/2021-welcome-week-ju/">HackSoc welcome week talk</a>
+        </li>
+    </ul>
+    <p>
+        Also, I have a <a href="https://www.youtube.com/@zacmg">YouTube channel with some extra videos and little demos of projects.</a>
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/puwhf-404Xc?si=lsLZCvJQify1IVUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </section>
 {{ end }}
 
 {{ define "sidebar" }}
 <img src="/images/me.jpeg" alt="" title="A blurry photo of me bouldering in a quarry in Portland, Dorset. September 2023">
-<a href="https://magicalinternetpoints.com/">
-    <img src="https://magicalinternetpoints.com/badge/zac" class="badge" />
-</a>
-<section>
+<section class="box">
     <h2>Contact Me</h2>
     <p>
         If you want to contact me, the best way is probably through Discord, where I'm <code>zacmg</code>. Or, you can email me at <code>me &lt;at&gt; this domain . co . uk</code>.
     </p>
+</section>
+<section>
+    <a href="https://magicalinternetpoints.com/"></a>
+        <img src="https://magicalinternetpoints.com/badge/zac" class="badge" />
+    </a>
 </section>
 <section>
     <h2>Hackathons</h2>
@@ -105,8 +173,8 @@
         I'm also a volunteer at <a href="https://www.hackathons.org.uk">Hackathons UK</a>, and I used to be the lead organiser of <a href="https://hacknotts.com">HackNotts</a>.
     </p>
 </section>
-<section>
-    <h2>The Mermaid</h2>
+<section class="box">
+    <h2>Mixed Reality</h2>
     <p>
         Something which I enjoy a lot and really want to do more of is "mixed reality". In particular, I mean projects which combine physical objects with actuators and (hopefully hidden) sensors, with software, to give some kind of experience. As a piece of art, really.
     </p>
@@ -122,14 +190,32 @@
         </a>
     </div>
     <iframe src="https://www.youtube.com/embed/FfUE7Gtn3QI?si=uT4fOA8sXKxCqDsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>
+        Back in 2019, when I finished my A-levels, me and a few of my friends were asked by the school to make some type of interactive exhibit for kids. This was for an event put on by the local community in Dorchester called <i>Moonbury Rings</i>, to celebrate the 50th anniversary of the Apollo moon landing.
+    </p>
+    <p>
+        We got some old cardboard boxes and filled them with computers, and so put together some retro arcade machines (home-made games, too, of course!). The link to the moon landings? I mean, one of the games was asteroids, at least...?
+    </p>
+    <div class="previews">
+        <a href="/images/moonbury/1.jpg">
+            <img src="/images/moonbury/1.jpg">
+        </a>
+        <a href="/images/moonbury/3.jpg">
+            <img src="/images/moonbury/3.jpg">
+        </a>
+        <a href="/images/moonbury/4.jpg">
+            <img src="/images/moonbury/4.jpg">
+        </a>
+        <a href="/images/moonbury/2.jpg">
+            <img src="/images/moonbury/2.jpg">
+        </a>
+    </div>
 </section>
 <section>
     <h2>Other Stuff</h2>
     <p>
         There's a lot of stuff on this website, but most of it can be found through the links at the top. Mostly, it's here to be a bit of a portfolio and a bit of a space for me to dump links in and send to people. There are also some things in the works (like a blog), but we'll see how those go.
-    </p>
-    <p>
-        There are also some maybe-interesting videos and clips of some of my projects and activities on my <a href="https://www.youtube.com/@zacgarby3113/featured">YouTube channel</a>.
     </p>
 </section>
 {{ end }}
