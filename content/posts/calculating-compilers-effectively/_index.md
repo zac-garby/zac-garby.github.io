@@ -1,6 +1,7 @@
 ---
 title: "Calculating Compilers Effectively"
-date: 2024-06-03
+in: "Papers"
+date: 2024-08-28
 year: 2024
 type: "posts"
 draft: false
