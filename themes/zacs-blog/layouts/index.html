@@ -23,7 +23,7 @@
             [{{ .Params.In }}, {{ if (isset .Params "year") }}
             {{ .Params.year }}]
         {{ else }}
-            {{ time.Format "2 Jan 2006" .Date }}]
+            {{ time.Format "Jan 2006" .Date }}]
         {{ end }}
             <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>

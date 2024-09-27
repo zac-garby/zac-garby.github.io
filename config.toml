@@ -11,19 +11,27 @@ unsafe= true
         name = "Zac Garby"
         url = "/"
         weight = 1
+        [menu.main.params]
+            icon = "/images/nav/zac.png"
 
     [[menu.main]]
         name = "Hackathons"
         url = "/hackathons"
         weight = 2
+        [menu.main.params]
+            icon = "/images/nav/hack.png"
     
     [[menu.main]]
-        name = "Publications & Blog"
+        name = "Writings"
         url = "/posts"
         weight = 3
+        [menu.main.params]
+            icon = "/images/nav/writing.png"
     
     [[menu.main]]
         name = "CV"
         url = "/files/cv.pdf"
         weight = 4
+        [menu.main.params]
+            icon = "/images/nav/cv.png"
     

@@ -3,7 +3,9 @@
         {{ range .Site.Menus.main }}
         {{ if or (eq .Name $.FirstSection.Name) (and (eq .Name "Zac Garby") (eq $.FirstSection.Name "Zac Garby")) }}
         <div class="current">
-            <a href="{{ .URL }}" class="current">{{ .Name }}
+            <a href="{{ .URL }}" class="current">
+            <img src="{{ .Params.Icon }}" class="selected">
+            {{ .Name }}
             {{ if and (not (eq .Name $.Name)) (not (eq .Name "Zac Garby")) }}
                 *
             {{ end }}
@@ -11,7 +13,10 @@
         </div>
         {{ else }}
             <div>
-                <a href="{{ .URL }}">{{ .Name }}</a>
+                <a href="{{ .URL }}">
+                    <img src="{{ .Params.Icon }}" class="unselected">
+                    {{ .Name }}
+                </a>
             </div>
         {{ end }}
         {{ end }}

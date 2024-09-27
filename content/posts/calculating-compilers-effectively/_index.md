@@ -5,6 +5,7 @@ date: 2024-08-28
 year: 2024
 type: "posts"
 draft: false
+side_photo: "/images/side-effects.png"
 links:
   - name: pdf
     link: /posts/calculating-compilers-effectively/paper.pdf

@@ -1,6 +1,9 @@
 {{ define "main" }}
-
+{{ with .Params.side_photo }}
+<img class="top-photo" src="{{ . }}" alt="">
+{{ end }}
 <h2>{{ .Title }}</h2>
+<h3 class="date">{{ .Params.date.Format "2 January 2006" }}</h3>
 {{ .Content }}
 
 <ul class="page-list">
@@ -11,7 +14,7 @@
             {{ if (isset .Params "year") }}
                 {{ .Params.year }}
             {{ else }}
-                {{ time.Format "2 Jan 2006" .Date }}
+                {{ time.Format "2 Jan '06" .Date }}
             {{ end }}
             {{ with .Params.links }}
                 <p class="links">
@@ -35,6 +38,6 @@
 
 {{ define "sidebar" }}
 {{ with .Params.side_photo }}
-<img src="{{ . }}" alt="">
+<img class="side-photo" src="{{ . }}" alt="">
 {{ end }}
 {{ end }}

@@ -53,6 +53,18 @@ div.nav a {
     text-decoration: none;
     color: white;
     padding: 4px 8px 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.nav a img {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+div.nav a img.unselected {
+    filter: saturate(0) opacity(0.5);
 }
 
 div.nav div {
@@ -314,4 +326,20 @@ article section *:first-child {
 
 article section *:last-child {
     margin-bottom: 0;
+}
+
+article.split img.top-photo {
+    display: none;
+}
+
+article.split img.side-photo {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 80px;
+}
+
+h3.date {
+    color: rgb(138, 86, 86);
+    margin: 0;
 }
