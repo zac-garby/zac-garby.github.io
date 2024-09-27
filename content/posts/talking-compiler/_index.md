@@ -3,7 +3,7 @@ title: "I want to talk to my compiler"
 in: "Blog"
 date: 2024-09-27
 type: "posts"
-draft: true
+draft: false
 side_photo: "/images/talkative.png"
 ---
 
