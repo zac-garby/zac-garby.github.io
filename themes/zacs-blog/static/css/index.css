@@ -37,10 +37,16 @@ a, a * {
     color: rgb(222, 70, 115);
 }
 
-p a:hover, ul.page-list a:hover {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(222, 70, 115);
+a {
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+p a:hover, ul.page-list a:hover, * a:hover {
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: rgb(222, 70, 115);
+    background-color: rgba(222, 70, 116, 0.174);
 }
 
 p a.bare {
@@ -71,25 +77,32 @@ div.nav div {
     display: block;
     width: calc(50% - 5px);
     padding: 0;
+    border: 3px solid rgb(131, 33, 63);
+    border-top-width: 1px;
+    border-left-width: 1px;
 }
 
 div.nav > *:nth-child(1) {
     background-color: rgb(97, 160, 231);
-    rotate: -1deg;
+    border-color: rgb(71, 121, 180);
+    rotate: -0.4deg;
 }
 
 div.nav > *:nth-child(2) {
     background-color: rgb(222, 70, 115);
+    border-color: rgb(148, 26, 62);
     rotate: 0.4deg;
 }
 
 div.nav > *:nth-child(3) {
     background-color: rgb(225, 174, 80);
-    rotate: 0.8deg;
+    border-color: rgb(161, 115, 29);
+    rotate: 0.5deg;
 }
 
 div.nav > *:nth-child(4) {
     background-color: rgb(221, 107, 175);
+    border-color: rgb(164, 46, 117);
     rotate: -0.3deg;
 }
 
@@ -150,12 +163,17 @@ article img.fullwidth {
 }
 
 article h1, article h2, article h3 {
-    color: rgb(201, 47, 93);
+    color: rgb(255, 83, 135);
 }
 
 article h2 {
     font-size: 1.2em;
     margin-bottom: 0px;
+    text-shadow: rgb(160, 31, 70) 1px 1px 0px;
+}
+
+article h1, article h3 {
+    text-shadow: rgba(160, 31, 70, 0.485) 1px 1px 0px;
 }
 
 article h3 {
@@ -251,11 +269,17 @@ span.prize {
     font-weight: normal;
     font-size: 70%;
     background-color: rgba(247, 247, 142, 0.438);
-    border: 1px solid rgb(126, 15, 0);
+    border: 2px solid rgb(126, 15, 0);
+    border-left-width: 1px;
+    border-top-width: 1px;
     color: rgb(126, 15, 0);
-    border-radius: 3px;
     padding: 3px 5px;
     vertical-align: 1px;
+    text-shadow: none;
+}
+
+span.prize::before {
+    content: "★ ";
 }
 
 iframe {
@@ -312,12 +336,18 @@ article section {
 article section.box {
     padding: 10px;
     margin-top: 10px;
-    background-color: rgb(249, 220, 220);
     background-color: rgb(222, 70, 115);
+    border: 5px solid rgb(131, 33, 63);
+    border-top-width: 1px;
+    border-left-width: 1px;
 }
 
 article section.box * {
     color: rgb(251, 241, 245);
+}
+
+article section.box h2 {
+    text-shadow: rgb(0, 0, 0) 1px 1px 0px;
 }
 
 article section *:first-child {
@@ -326,6 +356,16 @@ article section *:first-child {
 
 article section *:last-child {
     margin-bottom: 0;
+}
+
+article pre {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 5px;
+    border: 5px solid rgb(211, 185, 185);
+    border-top-width: 1px;
+    border-left-width: 1px;
+    background-color: rgb(247, 244, 236);
 }
 
 article.split img.top-photo {
