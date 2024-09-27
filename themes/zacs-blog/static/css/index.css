@@ -275,7 +275,10 @@ li.hackathon {
 }
 
 span.prize {
-    font-weight: normal;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    letter-spacing: 0.5px;
     font-size: 70%;
     background-color: rgba(247, 247, 142, 0.438);
     border: 2px solid rgb(126, 15, 0);
