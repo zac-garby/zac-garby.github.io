@@ -3,8 +3,15 @@
     color: rgb(30, 30, 30);
 }
 
-html, body {
+body {
     background-color: rgb(240, 235, 234);
+    background: rgb(240, 235, 234) repeating-linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.01) 0px,
+        rgba(0, 0, 0, 0.01) 30px,
+        rgba(255, 255, 255, 0.01) 30px,
+        rgba(255, 255, 255, 0.01) 60px
+    );
 }
 
 div.wrapper {
@@ -90,24 +97,52 @@ div.nav div {
 
 div.nav > *:nth-child(1) {
     background-color: rgb(97, 160, 231);
+    background: rgb(97, 160, 231) repeating-linear-gradient(
+        -60deg,
+        rgba(0, 0, 0, 0.03) 0px,
+        rgba(0, 0, 0, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 60px
+    );
     border-color: rgb(71, 121, 180);
     rotate: -0.4deg;
 }
 
 div.nav > *:nth-child(2) {
     background-color: rgb(222, 70, 115);
+    background: rgb(222, 70, 115) repeating-linear-gradient(
+        50deg,
+        rgba(0, 0, 0, 0.03) 0px,
+        rgba(0, 0, 0, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 60px
+    );
     border-color: rgb(148, 26, 62);
     rotate: 0.4deg;
 }
 
 div.nav > *:nth-child(3) {
     background-color: rgb(225, 174, 80);
+    background: rgb(225, 174, 80) repeating-linear-gradient(
+        -70deg,
+        rgba(0, 0, 0, 0.03) 0px,
+        rgba(0, 0, 0, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 60px
+    );
     border-color: rgb(161, 115, 29);
     rotate: 0.5deg;
 }
 
 div.nav > *:nth-child(4) {
     background-color: rgb(221, 107, 175);
+    background: rgb(221, 107, 175) repeating-linear-gradient(
+        -80deg,
+        rgba(0, 0, 0, 0.03) 0px,
+        rgba(0, 0, 0, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 60px
+    );
     border-color: rgb(164, 46, 117);
     rotate: -0.3deg;
 }
@@ -349,6 +384,13 @@ article section.box {
     padding: 10px;
     margin-top: 10px;
     background-color: rgb(222, 70, 115);
+    background: rgb(222, 70, 115) repeating-linear-gradient(
+        -60deg,
+        rgba(0, 0, 0, 0.03) 0px,
+        rgba(0, 0, 0, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 30px,
+        rgba(255, 255, 255, 0.03) 60px
+    );
     border: 5px solid rgb(131, 33, 63);
     border-top-width: 1px;
     border-left-width: 1px;
@@ -380,6 +422,13 @@ article pre {
     border-top-width: 1px;
     border-left-width: 1px;
     background-color: rgb(247, 244, 236);
+    background: rgb(247, 244, 236) repeating-linear-gradient(
+        -20deg,
+        rgba(0, 0, 0, 0.01) 0px,
+        rgba(0, 0, 0, 0.01) 30px,
+        rgba(255, 255, 255, 0.01) 30px,
+        rgba(255, 255, 255, 0.01) 60px
+    );
 }
 
 article code {
