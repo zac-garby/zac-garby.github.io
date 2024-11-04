@@ -9,12 +9,12 @@
     {{ range (sort .Pages "Date" "desc") }}
         <li class="hackathon {{ if .Params.prize }} winner {{ end }}">
             <a class="hackathon" href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ with .Params.devpost }}
-            <a class="devpost" href="{{ . }}">(Devpost)</a>
-            {{ end }}
             {{ with .Params.prize }}
-                <br>
-                <span class="prize">{{ . }}</span>
+            <br>
+            <span class="prize">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.devpost }}
+                <br><a class="devpost" href="{{ . }}">(Devpost)</a>
             {{ end }}
             {{ $date := .Params.date.Format "2 Jan '06" }}
             {{ with .Params.hackathon }}
