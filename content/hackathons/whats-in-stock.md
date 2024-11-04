@@ -54,4 +54,8 @@ The judges loved* it. And it was sort of soup, if you call porridge soup. Genuin
 
 So... your whole day's eating, right?
 
+I hope you agree, because George also made a robot to automatically add the items to your Tesco online cart. No need to thank us.
+
+---
+
 This was one of the few hackathons where the next day (i.e. today, Monday, the day I'm writing this), I spent *more time* on the project. I've been extending it with all sorts of improvements to the optimiser, and I have put together an optimal diet which will actually be enjoyable to follow. So, that's my plan now. I'll keep you posted.
