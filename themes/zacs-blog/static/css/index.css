@@ -1,17 +1,10 @@
 * {
     box-sizing: border-box;
-    color: rgb(250, 220, 200);
+    color: rgb(30, 30, 30);
 }
 
-body {
-    background-color: rgb(20, 20, 20);
-    background: rgb(20, 20, 20) repeating-linear-gradient(
-        90deg,
-        rgb(20, 20, 20) 0px,
-        rgb(20, 20, 20) 30px,
-        rgb(40, 26, 10) 30px,
-        rgb(40, 26, 10) 60px
-    );
+html, body {
+    background-color: rgb(240, 235, 234);
 }
 
 div.wrapper {
@@ -40,7 +33,7 @@ header div.nav {
 }
 
 a, a * {
-    color: rgb(200, 110, 40);
+    color: rgb(222, 70, 115);
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -54,7 +47,7 @@ a {
 p a:hover, ul.page-list a:hover, * a:hover {
     text-decoration: underline;
     text-decoration-style: double;
-    color: rgb(255, 80, 80);
+    color: rgb(222, 70, 115);
     background-color: rgba(222, 70, 116, 0.174);
 }
 
@@ -97,68 +90,26 @@ div.nav div {
 
 div.nav > *:nth-child(1) {
     background-color: rgb(97, 160, 231);
-    background: rgb(97, 160, 231) repeating-linear-gradient(
-        -60deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 60px
-    );
     border-color: rgb(71, 121, 180);
     rotate: -0.4deg;
 }
 
 div.nav > *:nth-child(2) {
     background-color: rgb(222, 70, 115);
-    background: rgb(222, 70, 115) repeating-linear-gradient(
-        50deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 60px
-    );
     border-color: rgb(148, 26, 62);
     rotate: 0.4deg;
 }
 
 div.nav > *:nth-child(3) {
     background-color: rgb(225, 174, 80);
-    background: rgb(225, 174, 80) repeating-linear-gradient(
-        -70deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 60px
-    );
     border-color: rgb(161, 115, 29);
     rotate: 0.5deg;
 }
 
 div.nav > *:nth-child(4) {
     background-color: rgb(221, 107, 175);
-    background: rgb(221, 107, 175) repeating-linear-gradient(
-        -80deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 60px
-    );
     border-color: rgb(164, 46, 117);
     rotate: -0.3deg;
-}
-
-div.nav > * {
-    /* halloween */
-
-    background: rgb(200, 110, 60) repeating-linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 30px,
-        rgba(150, 0, 0, 0.2) 30px,
-        rgba(150, 0, 0, 0.2) 60px
-    ) !important;
-
-    border-color: rgb(120, 50, 20) !important;
 }
 
 div.nav > *:nth-child(1).current {
@@ -175,11 +126,6 @@ div.nav > *:nth-child(3).current {
 
 div.nav > *:nth-child(4).current {
     outline: 4px solid rgba(255, 0, 153, 0.5);
-}
-
-div.nav > *.current {
-    /* halloween */
-    outline-color: rgba(255, 170, 100, 0.3) !important;
 }
 
 p {
@@ -200,7 +146,7 @@ a.devpost {
     font-size: 0.8em;
     margin-left: 5px;
     font-style: italic;
-    color: rgb(121, 90, 40);
+    color: rgb(121, 73, 87);
 }
 
 img.email {
@@ -223,7 +169,7 @@ article img.fullwidth {
 }
 
 article h1, article h2, article h3 {
-    color: rgb(243, 95, 40);
+    color: rgb(213, 44, 95);
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -247,14 +193,6 @@ article h3 {
 article p {
     margin-top: 5px;
     margin-bottom: 10px;
-}
-
-article section p {
-    text-indent: 10px;
-}
-
-article section p:first-of-type {
-    text-indent: 0;
 }
 
 article p:first-of-type {
@@ -299,7 +237,7 @@ article.split img, article.split figure {
 div.project {
     margin-top: 15px;
     padding: 15px;
-    border: 2px solid black;
+    border: 2px solid black;    
 }
 
 div.project h2 {
@@ -334,7 +272,7 @@ span.prize {
     font-weight: 350;
     letter-spacing: 0.5px;
     font-size: 70%;
-    background-color: rgba(247, 247, 142, 1);
+    background-color: rgba(247, 247, 142, 0.438);
     border: 2px solid rgb(126, 15, 0);
     border-left-width: 1px;
     border-top-width: 1px;
@@ -402,14 +340,8 @@ article section {
 article section.box {
     padding: 10px;
     margin-top: 10px;
-    background: rgb(90, 40, 30) repeating-linear-gradient(
-        -60deg,
-        rgba(0, 0, 0, 0.03) 0px,
-        rgba(0, 0, 0, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 30px,
-        rgba(255, 255, 255, 0.03) 60px
-    );
-    border: 5px solid rgb(70, 40, 20);
+    background-color: rgb(222, 70, 115);
+    border: 5px solid rgb(131, 33, 63);
     border-top-width: 1px;
     border-left-width: 1px;
 }
@@ -436,16 +368,10 @@ article pre {
     max-width: 100%;
     overflow-x: auto;
     padding: 5px;
-    border: 5px solid rgb(100, 60, 50);
+    border: 5px solid rgb(211, 185, 185);
     border-top-width: 1px;
     border-left-width: 1px;
-    background: rgb(50, 30, 20) repeating-linear-gradient(
-        -20deg,
-        rgba(0, 0, 0, 0.01) 0px,
-        rgba(0, 0, 0, 0.01) 30px,
-        rgba(255, 255, 255, 0.01) 30px,
-        rgba(255, 255, 255, 0.01) 60px
-    );
+    background-color: rgb(247, 244, 236);
 }
 
 article code {
