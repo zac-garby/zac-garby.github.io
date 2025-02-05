@@ -4,7 +4,7 @@ photos:
     - "/images/hackathons/soup1.jpg"
     - "/images/hackathons/soup2.jpg"
 date: "2024-11-02"
-hackathon: "HackNotts '24"
+hackathon: "Durhack '24"
 devpost: "https://devpost.com/software/what-s-in-stock-itzk3l"
 ---
 
