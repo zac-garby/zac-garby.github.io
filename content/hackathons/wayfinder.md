@@ -9,7 +9,7 @@ photos:
     - "/images/hackathons/way5.png"
     - "/images/hackathons/way6.png"
 video: "https://www.youtube.com/embed/q9bSCYCZBV0?si=nN3BAbE9Ew0gODi2"
-date: "2025-02-11"
+date: "2025-02-08"
 hackathon: "Royal Hackaway v8"
 devpost: "https://devpost.com/software/wayfinder-l4673m"
 ---
