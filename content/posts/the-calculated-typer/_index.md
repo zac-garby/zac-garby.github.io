@@ -13,11 +13,11 @@ Zac Garby, Graham Hutton, and Patrick Bahr
 
 ### Abstract
 
-We present a calculational approach to type checking, showing how type checkers
-can be derived from behaviour specifications using equational reasoning.  In
-addition, we show how the calculations can be simplified by taking an algebraic
-approach based on a fusion property, and further improved by taking a
-constraint-based approach to solving and composing fusion preconditions.  We
-illustrate our methodology with three examples of increasing complexity,
-starting with a simple expression language, then adding support for exceptions,
-and finally considering a version of the lambda calculus.
+We present a calculational approach to the design of type checkers,
+showing how they can be derived from behaviour specifications using equational
+reasoning.  In addition, we show how the calculations can be simplified by
+taking an algebraic approach based on fold fusion, and further improved by
+taking a constraint-based approach to solving and composing fusion
+preconditions.  We illustrate our methodology with three examples of increasing
+complexity, starting with a simple expression language, then adding support for
+exceptions, and finally considering a version of the lambda calculus.
