@@ -7,7 +7,7 @@ type: "posts"
 draft: false
 ---
 
-Zac Garby, Graham Hutton, and Patrick Bahr
+Zac Garby, Patrick Bahr, and Graham Hutton
 
 *In preparation, to submit to [ICFP '25](https://icfp25.sigplan.org)*
 
