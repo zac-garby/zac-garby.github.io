@@ -1,7 +1,7 @@
 ---
 title: "The Calculated Typer"
 in: "Papers"
-date: 2025-01-16
+date: 2025-02-28
 year: 2025
 type: "posts"
 draft: false
@@ -16,7 +16,7 @@ links:
 
 Zac Garby, Patrick Bahr, and Graham Hutton
 
-*In preparation, to submit to [ICFP '25](https://icfp25.sigplan.org)*
+*Submitted to [ICFP '25](https://icfp25.sigplan.org)*
 
 ### Abstract
 
