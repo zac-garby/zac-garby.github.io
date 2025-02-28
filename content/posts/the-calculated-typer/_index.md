@@ -5,6 +5,13 @@ date: 2025-01-16
 year: 2025
 type: "posts"
 draft: false
+links:
+  - name: pdf
+    link: /posts/the-calculated-typer/paper.pdf
+  - name: code
+    link: /posts/the-calculated-typer/code.zip
+  - name: bib
+    link: /posts/the-calculated-typer/paper.bib
 ---
 
 Zac Garby, Patrick Bahr, and Graham Hutton
