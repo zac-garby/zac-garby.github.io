@@ -21,7 +21,7 @@ Zac Garby, Patrick Bahr, and Graham Hutton
 ### Abstract
 
 We present a calculational approach to the design of type checkers,
-showing how they can be derived from behaviour specifications using equational
+showing how they can be derived from behavioural specifications using equational
 reasoning.  In addition, we show how the calculations can be simplified by
 taking an algebraic approach based on fold fusion, and further improved by
 taking a constraint-based approach to solving and composing fusion
