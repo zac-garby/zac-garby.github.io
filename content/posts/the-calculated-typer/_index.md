@@ -16,7 +16,7 @@ links:
 
 Zac Garby, Patrick Bahr, and Graham Hutton
 
-*Submitted to [ICFP '25](https://icfp25.sigplan.org)*
+*Submitted to the Haskell Symposium 2025*
 
 ### Abstract
 
