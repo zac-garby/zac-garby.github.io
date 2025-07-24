@@ -1,208 +1,138 @@
-%% This BibTeX bibliography file was created using BibDesk.
-%% https://bibdesk.sourceforge.io/
+@book{static-analysis,
+author = {Nielson, Flemming and Nielson, Hanne and Hankin, Chris},
+year = {1999},
+title = "{Principles of Program Analysis}",
+publisher = "Springer"}
 
-%% Created for Zac Garby at 2024-05-16 14:12:40 +0100 
+@article{haskell,
+  title={Haskell 2010 Language Report},
+  author={Marlow, Simon and others},
+  journal={Available online at \url{https://www.haskell.org}},
+  year=2010}
 
-
-%% Saved with string encoding Unicode (UTF-8) 
-
-@inproceedings{essence,
-author = {Wadler, Philip},
-title = "{The Essence of Functional Programming}",
-year = {1992},
-booktitle = {Proceedings of the ACM SIGPLAN-SIGACT Symposium
-	on Principles of Programming Languages}}
-
-@inproceedings{generic-prog,
-  title="{Generic Programming}",
-  author={Backhouse, Roland and Jansson, Patrik and Jeuring, Johan and Meertens, Lambert},
-  booktitle={Advanced Functional Programming: Third International School},
-  year=1999}
-
-@inproceedings{fold-unfold,
-        title = "{Fold and Unfold for Program Semantics}",
-        author = "Graham Hutton",
-        booktitle = "{Proceedings of the 3rd ACM SIGPLAN International Conference on Functional Programming}",
-        year = 1998}
-
-@inproceedings{free-monads,
-author = {L\"{u}th, Christoph and Ghani, Neil},
-title = {{Composing Monads Using Coproducts}},
-year = {2002},
-booktitle = {Proceedings of the Seventh ACM SIGPLAN International Conference on Functional Programming}}
-
-@inproceedings{cutting-out,
-	author = "Graham Hutton and Patrick Bahr",
-	title = "{Cutting Out Continuations}",
-        booktitle = "A List of Successes That Can Change the World",
-        year = 2016}
-
-@inproceedings{handlers,
-	author = {Plotkin, Gordon and Pretnar, Matija},
-	booktitle = {European Symposium on Programming},
-	title = {{Handlers of Algebraic Effects}},
-	year = {2009}}
-
-@inproceedings{algebraic-effects,
-	author = {Matija Pretnar},
-	booktitle = {Proceedings of the 31st Conference on the Mathematical Foundations of Programming Semantics},
-	title = {{An Introduction to Algebraic Effects and Handlers}},
-	year = {2015}}
-
-@phdthesis{meijer,
-	author = {Meijer, Erik},
-	school = {Katholieke Universiteit Nijmegen},
-	title = {{Calculating Compilers}},
-	year = {1992}}
-
-@techreport{danvy,
-	author = {Mads Sig Ager and Dariusz Biernacki and Olivier Danvy and Jan Midtgaard},
-	institution = {BRICS, Department of Computer Science, University of Aarhus},
-	number = {RS-03-14},
-	title = {{From Interpreter to Compiler and Virtual Machine: A Functional Derivation}},
-	type = {Technical Report},
-	year = {2003}}
-
-@article{monadic-cc,
-	articleno = 93,
-	author = {Patrick Bahr and Graham Hutton},
-	journal = {Proceedings of the ACM on Programming Languages},
-	number = {ICFP},
-	title = {{Monadic Compiler Calculation}},
-	volume = 6,
-	year = 2022}
-
-@article{gibbons,
-	articleno = 7,
-	author = {Jeremy Gibbons},
-	journal = {The Art, Science, and Engineering of Programming},
-	number = 2,
-	title = {{Continuation-Passing Style, Defunctionalization, Accumulations, and Associativity}},
-	volume = 6,
-	year = 2022}
-
-@inproceedings{just-do-it,
-	author = {Gibbons, Jeremy and Hinze, Ralf},
-	booktitle = {Proceedings of the 16th ACM SIGPLAN International Conference on Functional Programming},
-	title = {Just Do It: Simple Monadic Equational Reasoning},
-	year = {2011}}
-
-@article{choice-trees,
-	articleno = 213,
-	author = {Patrick Bahr and Graham Hutton},
-	journal = {Proceedings of the ACM on Programming Languages},
-	number = {ICFP},
-	title = {{Calculating Compilers for Concurrency}},
-	volume = 7,
-	year = 2023}
-
-@inproceedings{beast,
-	author = {Swierstra, Wouter and Altenkirch, Thorsten},
-	booktitle = {Proceedings of the ACM SIGPLAN Workshop on Haskell Workshop},
-	title = {{Beauty in the Beast}},
-	year = {2007}}
-
-@book{backhouse,
-	author = {Roland Backhouse},
-	publisher = {John Wiley and Sons, Inc.},
-	title = {{Program Construction: Calculating Implementations from Specifications}},
-	year = {2003}}
-
-@inproceedings{reynolds,
-	author = {Reynolds, John C},
-	booktitle = {{Proceedings of the ACM Annual Conference}},
-	title = {{Definitional Interpreters for Higher-Order Programming Languages}},
-	year = {1972}}
-
-@article{elliott,
-	articleno = {27},
-	author = {Elliott, Conal},
-	journal = {Proceedings of the ACM on Programming Languages},
-	number = {ICFP},
-	title = {{Compiling to Categories}},
-	volume = {1},
-	year = {2017}}
-
-@article{ccc2,
-	author = {Patrick Bahr and Graham Hutton},
-	journal = {Journal of Functional Programming},
-	publisher = {Cambridge University Press},
-	title = {{Calculating Correct Compilers II: Return of the Register Machines}},
-	volume = 30,
-	year = 2020}
-
-@article{50-year,
-	author = {Graham Hutton and Patrick Bahr},
-	journal = {Journal of Functional Programming},
-	publisher = {Cambridge University Press},
-	title = {{Compiling a 50-Year Journey}},
-	volume = 27,
-	year = 2017}
-
-@article{dep-typed,
-	articleno = 82,
-	author = {Mitchell Pickard and Graham Hutton},
-	journal = {Proceedings of the ACM on Programming Languages},
-	number = {ICFP},
-	title = {{Calculating Dependently-Typed Compilers}},
-	volume = 5,
-	year = 2021}
-
-@article{wand,
-	author = {Wand, Mitchell},
-	journal = {{ACM Transactions on Programming Languages and Systems}},
-	number = {3},
-	title = {{Deriving Target Code as a Representation of Continuation Semantics}},
-	volume = {4},
-	year = {1982}}
-
-@inproceedings{comp-except,
-	author = {Graham Hutton and Joel Wright},
-	booktitle = {{Proceedings of the 7th International Conference on Mathematics of Program Construction}},
-	title = {{Compiling Exceptions Correctly}},
-	year = 2004}
-
-@inproceedings{awkwardsquad,
-	author = {Simon {Peyton Jones}},
-	booktitle = {{Engineering Theories of Software Construction}},
-	title = {{Tackling The Awkward Squad: Monadic Input/Output, Concurrency, Exceptions, and Foreign-Language Calls in Haskell}},
-	year = {2001}}
-
-@article{onetwothree,
-	author = {Graham Hutton},
-	journal = {Journal of Functional Programming},
-	publisher = {Cambridge University Press},
-	title = {{Programming Language Semantics: It's Easy As 1,2,3}},
-	volume = 33,
-	year = 2023}
+@inproceedings{bananas,
+        author = "Erik Meijer and Maarten Fokkinga and Ross Paterson",
+        title = "{Functional Programming with Bananas, Lenses,
+                 Envelopes and Barbed Wire}",
+        booktitle = "{Proceedings of the Conference on Functional Programming
+                and Computer Architecture}",
+        year = 1991}
 
 @article{ccc,
-	author = {Patrick Bahr and Graham Hutton},
+        author = "Patrick Bahr and Graham Hutton",
+        title = "{Calculating Correct Compilers}",
+        journal = "Journal of Functional Programming",
+        publisher = "Cambridge University Press",
+        volume = 25,
+        year = 2015}
+
+
+@article{ccc2,
+	title = "{Calculating Correct Compilers {II}: {Return} of the Register Machines}",
+	volume = {30},
 	journal = {Journal of Functional Programming},
-	publisher = {Cambridge University Press},
-	title = {{Calculating Correct Compilers}},
-	volume = 25,
-	year = 2015}
+	author = {Bahr, Patrick and Hutton, Graham},
+	year = {2020}
+}
 
-@inproceedings{monad-morph,
-	author = {Wadler, Philip},
-	booktitle = {Advanced Functional Programming},
-	title = {{Monads for Functional Programming}},
-	year = 1995}
+@book{pierce,
+	author = {Pierce, Benjamin C.},
+	title = "{Types and Programming Languages}",
+	year = {2002},
+	publisher = {The MIT Press}}
 
-@inproceedings{stm,
-	author = {Harris, Tim and Marlow, Simon and Peyton-Jones, Simon and Herlihy, Maurice},
-	booktitle = {Proceedings of the ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
-	title = {Composable Memory Transactions},
-	year = {2005}}
+@book{backhouse,
+  Title                    = {{Program Construction: Calculating Implementations from Specifications}},
+  Author                   = {Roland Backhouse},
+  Publisher                = {John Wiley and Sons, Inc.},
+  Year                     = {2003}
+}
 
-@article{nondeterminism,
-  title={Non-determinism in functional languages},
-  author={S{\o}ndergaard, Harald and Sestoft, Peter},
-  journal={The Computer Journal},
-  volume={35},
-  number={5},
-  pages={514--523},
-  year={1992},
-  publisher={The British Computer Society}
+
+@phdthesis{meijer-phd,
+	type = {{PhD} {Thesis}},
+	title = {Calculating {Compilers}},
+	school = {Katholieke Universiteit Nijmegen},
+	author = {Erik Meijer},
+	year = {1992}
+}
+
+@inproceedings{cousot97TypesAbstractInterpretations,
+	address = {Paris, France},
+	title = "{Types as Abstract Interpretations}",
+	booktitle = "{Proceedings of the Symposium on Principles of Programming Languages}",
+	publisher = {ACM},
+	author = {Cousot, Patrick},
+	year = {1997}}
+
+@book{java,
+author = {Gosling, James and Joy, Bill and Steele, Guy L.},
+title = "{The  Java Language Specification}",
+year = {1996},
+publisher = {Addison-Wesley Longman Publishing}}
+
+@article{clu,
+author = {Liskov, Barbara H. and Snyder, Alan},
+title = "{Exception Handling in CLU}",
+year = {1979},
+publisher = {IEEE Press},
+volume = {5},
+number = {6},
+journal = {IEEE Transactions on Software Engineering}}
+
+@article{goodenough75ExceptionHandlingIssues,
+	title = "{Exception Handling: Issues and a Proposed Notation}",
+	volume = {18},
+	number = {12},
+	journal = {Communications of the ACM},
+	author = {Goodenough, John B.},
+	year = {1975}}
+
+@inproceedings{plotkin09HandlersAlgebraicEffects,
+	series = "{Lecture {Notes} in {Computer} {Science}}",
+	title = "{Handlers of {Algebraic} {Effects}}",
+	volume = {5502},
+	booktitle = {Programming {Languages} and {Systems}},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Plotkin, Gordon and Pretnar, Matija},
+	year = {2009}}
+
+@inproceedings{bauer13EffectSystemAlgebraic,
+	title = "{An {Effect} {System} for {Algebraic} {Effects} and {Handlers}}",
+	booktitle = {Algebra and {Coalgebra} in {Computer} {Science}},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Bauer, Andrej and Pretnar, Matija},
+	year = {2013}}
+
+@article{hoas,
+  title="{Higher-Order Abstract Syntax}",
+  author={Pfenning, Frank and Elliott, Conal},
+  journal={ACM Sigplan Notices},
+  volume={23},
+  number={7},
+  year={1988}}
+
+@inproceedings{outerspace,
+  title="{Revisiting Catamorphisms over Datatypes with Embedded Functions (or, Programs from Outer Space)}",
+  author={Fegaras, Leonidas and Sheard, Tim},
+  booktitle={Proceedings of the Symposium on Principles of programming languages},
+  year={1996}
+}
+
+@inproceedings{spacebananas,
+  title="{Bananas in Space: Extending Fold and Unfold to Exponential Types}",
+  author={Meijer, Erik and Hutton, Graham},
+  booktitle={Proceedings of the International Conference on Functional Programming Languages and Computer Architecture},
+  year={1995}
+}
+
+@article{boxesgobananas,
+  title={Boxes go bananas: Encoding higher-order abstract syntax with parametric polymorphism},
+  author={Washburn, Geoffrey and Weirich, Stephanie},
+  journal={ACM SIGPLAN Notices},
+  volume={38},
+  number={9},
+  pages={249--262},
+  year={2003},
+  publisher={ACM New York, NY, USA}
 }
