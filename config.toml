@@ -20,18 +20,17 @@ unsafe= true
         weight = 2
         [menu.main.params]
             icon = "/images/nav/hack.png"
-    
+
     [[menu.main]]
-        name = "Writings"
+        name = "Publications"
         url = "/posts"
         weight = 3
         [menu.main.params]
             icon = "/images/nav/writing.png"
-    
+
     [[menu.main]]
         name = "CV"
         url = "/files/cv.pdf"
         weight = 4
         [menu.main.params]
             icon = "/images/nav/cv.png"
-    
