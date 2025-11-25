@@ -5,6 +5,10 @@
 
 html, body {
     background-color: rgb(240, 235, 234);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 div.wrapper {
@@ -175,13 +179,22 @@ article h1, article h2, article h3 {
     letter-spacing: 1px;
 }
 
-article h2 {
-    font-size: 1.6em;
-    margin-bottom: 0px;
-}
-
 article h1, article h3 {
     text-shadow: rgba(160, 31, 70, 0.485) 1px 1px 0px;
+}
+
+article h1.hackathon-title {
+    font-size: 1.6em;
+}
+
+article h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+article h2 {
+    font-size: 1.35em;
+    margin-bottom: 0;
 }
 
 article h3 {
@@ -223,7 +236,7 @@ header code {
 
 article.split {
     display: grid;
-    grid-template-columns: 55% auto;
+    grid-template-columns: 60% auto;
     gap: 20px;
 }
 
@@ -372,6 +385,7 @@ article pre {
     border-top-width: 1px;
     border-left-width: 1px;
     background-color: rgb(247, 244, 236);
+    line-height: 1em;
 }
 
 article code {

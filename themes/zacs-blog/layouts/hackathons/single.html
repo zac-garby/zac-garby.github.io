@@ -1,12 +1,12 @@
 {{ define "main" }}
-<div id="knuckles">
-    <h2>
+<div>
+    <h1 class="hackathon-title">
         {{ .Title }}
         {{ with .Params.prize }}
             <br>
             <span class="prize">{{ . }}</span>
         {{ end }}
-    </h2>
+    </h1>
     <p class="date">
         {{ .Params.date.Format "2 January 2006" }},
         {{ .Params.hackathon }}
