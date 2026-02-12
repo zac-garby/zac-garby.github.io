@@ -4,8 +4,8 @@
 }
 
 html, body {
-    background-color: rgb(240, 235, 234);
-    font-size: 16px;
+    background-color: rgb(255, 245, 255);
+    font-size: 17px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -36,14 +36,26 @@ header div.nav {
     gap: 10px;
 }
 
+section#intro em:nth-of-type(1n) {
+    color: rgb(50, 140, 40);
+}
+
+section#intro em:nth-of-type(2n) {
+    color: rgb(30, 100, 140);
+}
+
+section#intro em:nth-of-type(3n) {
+    color: rgb(140, 70, 60);
+}
+
 a, a * {
-    color: rgb(222, 70, 115);
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
 }
 
 a {
+    color: rgb(222, 70, 115);
     text-decoration: underline;
     text-decoration-style: solid;
 }
@@ -53,6 +65,16 @@ p a:hover, ul.page-list a:hover, * a:hover {
     text-decoration-style: double;
     color: rgb(222, 70, 115);
     background-color: rgba(222, 70, 116, 0.174);
+}
+
+section#intro a:nth-of-type(1n) {
+    color: rgb(222, 70, 115);
+}
+section#intro a:nth-of-type(2n) {
+    color: rgb(40, 170, 115);
+}
+section#intro a:nth-of-type(3n) {
+    color: rgb(80, 20, 160);
 }
 
 p a.bare {

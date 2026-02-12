@@ -1,13 +1,12 @@
 {{ define "main" }}
-<section>
+<section id="intro">
     <p>
-        Hello! I'm Zac, a <a href="http://www.cs.nott.ac.uk/~psyzg5/">PhD student</a> in the <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">FP lab</a> at the <a href="https://www.nottingham.ac.uk">The University of Nottingham</a>, under the supervision of <a href="http://www.cs.nott.ac.uk/~pszgmh/">Graham Hutton</a>.
+        Hello! I'm Zac, a <a href="http://www.cs.nott.ac.uk/~psyzg5/">PhD student</a> in the <a href="https://www.nottingham.ac.uk/research/groups/fp-lab/">FP lab</a> at the <a href="https://www.nottingham.ac.uk">The University of Nottingham</a>, supervised by <a href="http://www.cs.nott.ac.uk/~pszgmh/">Graham Hutton</a>.
     </p>
     <p>
-        I'm really interested in programming languages (mostly <a href="https://www.haskell.org">functional</a> <a href="https://github.com/zac-garby/diss/tree/master/fugue">ones</a>) and how they can be made easier to use (e.g. interactive programming, clever type systems), plus things like program synthesis, holes, and anything else to do with incomplete programs. For my 4th year dissertation, I came up with some novel techniques for synthesising recursive functions (have a look at <a href="/files/paper.pdf">my paper</a> - it should be readable without any background in the area!) and implemented them in my toy programming language, <a href="https://github.com/zac-garby/diss/tree/master/fugue">Fugue</a>.
-    </p>
+        I'm really interested in programming languages (mostly <a href="https://www.haskell.org">functional</a> <a href="https://github.com/zac-garby/diss/tree/master/fugue">ones</a>) and how they can be made easier to use (e.g. <em>interactive programming</em>, <em>clever type systems</em>), plus things like <em>program synthesis</em>, <em>holes</em>, and anything else to do with <em>incomplete programs</em>.
     <p>
-        Another great interest of mine, and in fact where my research is mostly focusing at the moment, is compiler calculation. This is where we can write a specification for some programming language as a high-level semantics (e.g. a tree-walking evaluator) and <i>derive</i> a compiler and a virtual machine for that language. My latest (and first) paper in this area, a functional pearl titled <a href="/posts/calculating-compilers-effectively/">Calculating Compilers Effectively</a>, has been accepted for publication in the <em>Haskell Symposium</em>, 2024.
+        My research at the moment focuses on techniques for <em>program calculation</em>, in particular calculating compilers and type systems. Check out my <a href="/posts">publications</a> to see more.
     </p>
     <p>
         Outside of my research, my interests include climbing, reading (mostly sci-fi and fantasy), and being slightly obsessive about coffee. I also have an assortment of various programming projects which I work on from time to time. Also, I'm a big <a href="/hackathons">hackathon</a> enjoyer, when they're in season.
@@ -38,11 +37,11 @@
         Most of my old projects are completely unfinished, but feel free to have a look around my <a href="https://github.com/zac-garby">GitHub</a> page nevertheless. Amongst the 150-or-so cobweb-encrusted repositories there, there are some pretty cool things!
     </p>
     <p>
-        In practice, hackathons are pretty much the only time I actually get round to finishing projects... Saying that, here are some other projects which I <i>have</i> actually finished, or at least gotten sick of and called them done.
+        In practice, <a href="/hackathons">hackathons</a> are pretty much the only time I actually get round to finishing projects... Here is a selection of some of my other projects which I <i>have</i> actually finished, or at least gotten sick of and called them done.
     </p>
     <ul>
         <li>
-            <a href="https://github.com/zac-garby/diss"><i>Fantasia &amp; Fugue</i></a>. Two little projects actually. <i>Fugue</i> is a functional programming language I made for my third year dissertation, with a novel type system supporting holes (i.e. incomplete programs). <i>Fantasia</i> is an example-directed program synthesis engine built on top of it, with some clever little tricks to synthesise recursive programs. <i>(Haskell)</i>
+            <a href="https://github.com/zac-garby/diss"><i>Fantasia &amp; Fugue</i></a>. Two little projects actually. <i>Fugue</i> is a functional programming language I made for my third year dissertation, with a novel type system supporting holes (i.e. incomplete programs). <i>Fantasia</i> is an example-directed program synthesis engine built on top of it, with a novel way to synth recursive programs. <i>(Haskell)</i>
         </li>
         <li>
             <a href="https://zacgarby.itch.io/infiltrate"><i>Infiltrate</i></a>, a fun little game I made for a module at university. I think the brief was to make a game "with five levels". In <i>Infiltrate</i>, you are playing as a spy breaking into an evil pharmaceutical lab, but each "level", you have to avoid detection by the spies you played on the previous levels. <i>(Java, LibGDX)</i>
@@ -55,7 +54,7 @@
         </li>
     </ul>
     <p>
-        Also, I've made some websites over the years which may be useful and/or fun and/or interesting to some people! Please do let me know if any of these links are dead; they shouldn't be.
+        Also, I've made some websites over the years which may be useful and/or fun and/or interesting to some people! Please do let me know if any of these links are dead. It happens.
     </p>
     <ul>
         <li>
@@ -65,7 +64,7 @@
             <a href="https://magicalinternetpoints.com">https://magicalinternetpoints.com/</a> &mdash; Gain magical internet points by doing stuff on the web! This is where the cool badge under the photo on this page comes from. <i>(Go, Web stuff)</i>
         </li>
         <li>
-            <a href="http://tab.gar.by">http://tab.gar.by</a> &mdash; A minimalistic, nice-to-use web-based guitar tab viewer. Paste plain-text tabs in, and view them in a significantly more readable (and wide-screen-friendly) way.
+            <a href="http://tab.zacgarby.co.uk">http://tab.gar.by</a> &mdash; A minimalistic, nice-to-use web-based guitar tab viewer. Paste plain-text tabs in, and view them in a significantly more readable (and wide-screen-friendly) way.
         </li>
         <li>
             <a href="https://gar.by">https://gar.by</a> &mdash; Honestly, just a cool domain name. In theory, lists the websites of everybody in my family. As it happens, only two of us have websites.
@@ -85,6 +84,9 @@
         I really enjoy talking to people about stuff, and also giving workshops and teaching people about things. Here's a list of some of these. Unfortunately most weren't filmed, but some were!
     </p>
     <ul>
+        <li>
+            <em>11 Dec '25</em> <a href="https://www.youtube.com/watch?v=G6ZHUOSXZDo">Computerphile: Wave Function Collapse in Carcassonne</a>
+        </li>
         <li>
             <em>16 Oct '25</em> <a href="https://www.youtube.com/watch?v=uCPJ22aj_kI">The Calculated Typer @ ICFP '25</a>
         </li>
@@ -135,9 +137,13 @@
         </li>
     </ul>
     <p>
-        Also, I have a <a href="https://www.youtube.com/@zacmg">YouTube channel with some extra videos and little demos of projects.</a>
+        Also, I have a <a href="https://www.youtube.com/@zacmg">YouTube channel with some extra videos and little demos of projects.</a> Some fun stuff. Finally, I've done a few Computerphile videos.
     </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G6ZHUOSXZDo?si=FLr7E7Y-_u_1Hml_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/puwhf-404Xc?si=lsLZCvJQify1IVUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>
+        Some truly flattering thumbnail mugs there.
+    </p>
 </section>
 {{ end }}
 
@@ -146,7 +152,10 @@
 <section class="box">
     <h2>Contact Me</h2>
     <p>
-        If you want to contact me, the best way is probably through Discord, where I'm <code>zacmg</code>. Or, you can email me at <code>me &lt;at&gt; this domain . co . uk</code>.
+        The best way is probably through Discord, where I'm <code>zacmg</code>. Or, you can email me:
+    </p>
+    <p>
+        <a href="mailto:zacgarby.co.uk"><code>me@zacgarby.co.uk</code></a>
     </p>
 </section>
 <section>
