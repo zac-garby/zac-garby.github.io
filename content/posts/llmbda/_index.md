@@ -6,6 +6,8 @@ year: 2026
 type: "posts"
 draft: false
 links:
+    - name: arXiv
+      link: https://arxiv.org/abs/2602.20064
 ---
 
 Zac Garby, Andrew D. Gordon, and David Sands

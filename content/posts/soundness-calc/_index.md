@@ -5,6 +5,13 @@ date: 2026-02-12
 year: 2026
 type: "posts"
 draft: false
+links:
+  - name: pdf
+    link: /posts/soundness-calc/paper.pdf
+  - name: Agda formalisation
+    link: /posts/soundness-calc/agda.zip
+  - name: bib
+    link: /posts/soundness-calc/paper.bib
 ---
 
 Patrick Bahr, Zac Garby, and Graham Hutton
