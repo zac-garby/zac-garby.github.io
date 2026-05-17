@@ -9,7 +9,7 @@ photos:
     - "/images/hackathons/nio-shape3.png"
     - "/images/hackathons/nio-shape4.png"
 hackathon: "NIO Student Hackathon"
-video: "https://youtube.com/shorts/huZqVS9-oZI"
+video: "https://www.youtube.com/embed/huZqVS9-oZI?si=klwdphCeHsNo2DGB"
 ---
 
 This was a bit of a different one, but I really enjoyed it!
