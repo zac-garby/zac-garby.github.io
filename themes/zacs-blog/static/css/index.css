@@ -406,7 +406,7 @@ article pre {
     border: 5px solid rgb(211, 185, 185);
     border-top-width: 1px;
     border-left-width: 1px;
-    background-color: rgb(247, 244, 236);
+    background-color: rgb(247, 244, 236) !important;
     line-height: 1em;
 }
 
